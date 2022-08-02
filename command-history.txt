@@ -1,0 +1,7 @@
+pnpm create vite search-ecs --template react-ts
+cd search-ecs
+git init
+git add --all
+(git commit in vscode)
+
+touch command-history.txt
