@@ -11,3 +11,5 @@ gh repo create
 pnpm install
 pnpm run dev
 (deploy to Vercel)
+
+git switch --create develop
