@@ -7,3 +7,6 @@ git add --all
 touch command-history.txt
 gh repo create
 (create LICENSE on GitHub)
+
+pnpm install
+pnpm run dev
