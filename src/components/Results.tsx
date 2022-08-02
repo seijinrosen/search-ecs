@@ -68,7 +68,7 @@ const Results = ({ searchQuery }: { searchQuery: string }) => {
         <ResultItem
           name={name}
           url={baseUrl.replace("${searchQuery}", searchQuery)}
-          showUrl={showUrl!}
+          showUrl={showUrl ?? true}
           icon={icon}
           key={id}
         />
