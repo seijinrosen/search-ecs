@@ -39,7 +39,7 @@ const sites = [
 ];
 
 const Results = ({ searchQuery }: { searchQuery: string }) => {
-  const [showUrl, setShowUrl] = useLocalStorage("showUrl", true);
+  const [showUrl, saveShowUrl] = useLocalStorage("showUrl", true);
 
   return (
     <List
@@ -52,7 +52,7 @@ const Results = ({ searchQuery }: { searchQuery: string }) => {
             control={
               <Checkbox
                 checked={showUrl}
-                onChange={(e) => setShowUrl(e.target.checked)}
+                onChange={(e) => saveShowUrl(e.target.checked)}
               />
             }
             label={

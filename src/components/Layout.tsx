@@ -17,7 +17,7 @@ const normalizePaletteMode = (
 
 const Layout = ({ children }: { children: ReactNode }) => {
   const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
-  const [paletteMode, setPaletteMode, removePaletteMode] = useLocalStorage<
+  const [paletteMode, savePaletteMode, removePaletteMode] = useLocalStorage<
     "light" | "dark"
   >("paletteMode");
   const [mode, setMode] = useState(
@@ -28,7 +28,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
       toggleColorMode: () =>
         setMode((prevMode) => {
           const nextMode = prevMode === "light" ? "dark" : "light";
-          setPaletteMode(nextMode);
+          savePaletteMode(nextMode);
           return nextMode;
         }),
       resetColorMode: () => {
