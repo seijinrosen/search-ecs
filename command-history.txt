@@ -11,3 +11,7 @@ gh repo create
 pnpm install
 pnpm run dev
 (deploy to Vercel)
+
+git switch --create develop
+
+pnpm add @emotion/react @emotion/styled @mui/icons-material @mui/material react-hotkeys-hook react-icons react-use
