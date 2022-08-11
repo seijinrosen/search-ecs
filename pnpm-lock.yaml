@@ -7,7 +7,7 @@ specifiers:
   '@mui/material': 5.10.0
   '@types/react': 18.0.17
   '@types/react-dom': 18.0.6
-  '@vitejs/plugin-react': 2.0.0
+  '@vitejs/plugin-react': 2.0.1
   react: 18.2.0
   react-dom: 18.2.0
   react-hotkeys-hook: 3.4.7
@@ -30,7 +30,7 @@ dependencies:
 devDependencies:
   '@types/react': 18.0.17
   '@types/react-dom': 18.0.6
-  '@vitejs/plugin-react': 2.0.0_vite@3.0.5
+  '@vitejs/plugin-react': 2.0.1_vite@3.0.5
   typescript: 4.7.4
   vite: 3.0.5
 
@@ -658,9 +658,9 @@ packages:
   /@types/scheduler/0.16.2:
     resolution: {integrity: sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==}
 
-  /@vitejs/plugin-react/2.0.0_vite@3.0.5:
-    resolution: {integrity: sha512-zHkRR+X4zqEPNBbKV2FvWSxK7Q6crjMBVIAYroSU8Nbb4M3E5x4qOiLoqJBHtXgr27kfednXjkwr3lr8jS6Wrw==}
-    engines: {node: '>=14.18.0'}
+  /@vitejs/plugin-react/2.0.1_vite@3.0.5:
+    resolution: {integrity: sha512-uINzNHmjrbunlFtyVkST6lY1ewSfz/XwLufG0PIqvLGnpk2nOIOa/1CACTDNcKi1/RwaCzJLmsXwm1NsUVV/NA==}
+    engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       vite: ^3.0.0
     dependencies:
