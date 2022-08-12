@@ -14,7 +14,7 @@ specifiers:
   react-icons: 4.4.0
   react-use: 17.4.0
   typescript: 4.7.4
-  vite: 3.0.5
+  vite: 3.0.6
 
 dependencies:
   '@emotion/react': 11.10.0_msmmgljd7hl2w2irtggflhmema
@@ -30,9 +30,9 @@ dependencies:
 devDependencies:
   '@types/react': 18.0.17
   '@types/react-dom': 18.0.6
-  '@vitejs/plugin-react': 2.0.1_vite@3.0.5
+  '@vitejs/plugin-react': 2.0.1_vite@3.0.6
   typescript: 4.7.4
-  vite: 3.0.5
+  vite: 3.0.6
 
 packages:
 
@@ -658,7 +658,7 @@ packages:
   /@types/scheduler/0.16.2:
     resolution: {integrity: sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==}
 
-  /@vitejs/plugin-react/2.0.1_vite@3.0.5:
+  /@vitejs/plugin-react/2.0.1_vite@3.0.6:
     resolution: {integrity: sha512-uINzNHmjrbunlFtyVkST6lY1ewSfz/XwLufG0PIqvLGnpk2nOIOa/1CACTDNcKi1/RwaCzJLmsXwm1NsUVV/NA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
@@ -671,7 +671,7 @@ packages:
       '@babel/plugin-transform-react-jsx-source': 7.18.6_@babel+core@7.18.10
       magic-string: 0.26.2
       react-refresh: 0.14.0
-      vite: 3.0.5
+      vite: 3.0.6
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -1497,8 +1497,8 @@ packages:
       escalade: 3.1.1
       picocolors: 1.0.0
 
-  /vite/3.0.5:
-    resolution: {integrity: sha512-bRvrt9Tw8EGW4jj64aYFTnVg134E8hgDxyl/eEHnxiGqYk7/pTPss6CWlurqPOUzqvEoZkZ58Ws+Iu8MB87iMA==}
+  /vite/3.0.6:
+    resolution: {integrity: sha512-pjfsWIzfUlQME/VAmU6SsjdHkTt6WAHysuqPkHDcjzNu6IGtxDSZ/VfRYOwHaCqX4M3Ivz0kxuSfAPM6gAIX+w==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
