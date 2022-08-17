@@ -9,6 +9,18 @@ import {
 } from "@mui/material";
 import { useEffect, useRef, useState } from "react";
 import { useHotkeys } from "react-hotkeys-hook";
+import { randomChoice } from "../util";
+
+const placeholderCandidates = [
+  "ウェットティッシュ",
+  "トイレットペッパー",
+  "ボディソープ",
+  "外付けハードディスク",
+  "紙コップ",
+  "絆創膏",
+  "鼻炎薬",
+];
+const randomPlaceholder = randomChoice(placeholderCandidates);
 
 type Props = {
   searchQuery: string;
@@ -47,7 +59,7 @@ const SearchField = ({ searchQuery, setSearchQuery }: Props) => {
         variant="standard"
         fullWidth
         label="Search..."
-        placeholder="e.g., 紙コップ"
+        placeholder={`e.g., ${randomPlaceholder}`}
         inputRef={inputRef}
         autoFocus={over600px}
         InputProps={{
