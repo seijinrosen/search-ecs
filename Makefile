@@ -1,3 +1,9 @@
+dev:
+	pnpm run dev
+
+switch:
+	git switch --create develop
+
 init:
 	pnpm install
 
