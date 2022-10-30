@@ -1,5 +1,6 @@
 import GoogleIcon from "@mui/icons-material/Google";
 import { Typography } from "@mui/material";
+import { DiYahooSmall } from "react-icons/di";
 import { FaAmazon } from "react-icons/fa";
 import { SiRakuten } from "react-icons/si";
 
@@ -27,5 +28,11 @@ export const ecSites = [
     name: "Google",
     baseUrl: "https://www.google.com/search?q=${searchQuery}",
     icon: <GoogleIcon />,
+  },
+  {
+    id: 4,
+    name: "Yahoo!ショッピング",
+    baseUrl: "https://shopping.yahoo.co.jp/search?p=${searchQuery}",
+    icon: <DiYahooSmall />,
   },
 ];
