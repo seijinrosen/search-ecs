@@ -5,6 +5,7 @@ specifiers:
   '@emotion/styled': 11.10.4
   '@mui/icons-material': 5.10.9
   '@mui/material': 5.10.9
+  '@types/encoding-japanese': ^2.0.1
   '@types/react': 18.0.21
   '@types/react-dom': 18.0.6
   '@vitejs/plugin-react': 2.1.0
@@ -30,6 +31,7 @@ dependencies:
   react-use: 17.4.0_biqbaboplfbrettd7655fr4n2y
 
 devDependencies:
+  '@types/encoding-japanese': 2.0.1
   '@types/react': 18.0.21
   '@types/react-dom': 18.0.6
   '@vitejs/plugin-react': 2.1.0_vite@3.1.8
@@ -673,6 +675,10 @@ packages:
   /@popperjs/core/2.11.6:
     resolution: {integrity: sha512-50/17A98tWUfQ176raKiOGXuYpLyyVMkxxG6oylzL3BPOlA6ADGdK7EYunSa4I064xerltq9TGXs8HmOk5E+vw==}
     dev: false
+
+  /@types/encoding-japanese/2.0.1:
+    resolution: {integrity: sha512-JaCXs2HLniKY8xXeWlg8MAtd4iKhNh8LwutW3yDMWY4usEdTZ2va1x9kd8V3179OAIUTgGQVA63XJrHettpVFQ==}
+    dev: true
 
   /@types/js-cookie/2.2.7:
     resolution: {integrity: sha512-aLkWa0C0vO5b4Sr798E26QgOkss68Un0bLjs7u9qxzPT5CG+8DuNTffWES58YzJs3hrVAOs1wonycqEBqNJubA==}

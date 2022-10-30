@@ -19,3 +19,4 @@ pnpm add @emotion/react @emotion/styled @mui/icons-material @mui/material react-
 echo "auto-install-peers=true" > .npmrc
 
 pnpm add encoding-japanese
+pnpm add --save-dev @types/encoding-japanese
