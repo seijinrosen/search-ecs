@@ -17,3 +17,5 @@ git switch --create develop
 pnpm add @emotion/react @emotion/styled @mui/icons-material @mui/material react-hotkeys-hook react-icons react-use
 
 echo "auto-install-peers=true" > .npmrc
+
+pnpm add encoding-japanese

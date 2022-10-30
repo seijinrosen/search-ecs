@@ -8,6 +8,7 @@ specifiers:
   '@types/react': 18.0.21
   '@types/react-dom': 18.0.6
   '@vitejs/plugin-react': 2.1.0
+  encoding-japanese: ^2.0.0
   react: 18.2.0
   react-dom: 18.2.0
   react-hotkeys-hook: 3.4.7
@@ -21,6 +22,7 @@ dependencies:
   '@emotion/styled': 11.10.4_ogudqqhlstsi7uge4lir7ff3ty
   '@mui/icons-material': 5.10.9_6usjrp3ypnzobhq35dcwvjrt3m
   '@mui/material': 5.10.9_ikcgkdnp4bn3rgptamntbhbo7e
+  encoding-japanese: 2.0.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-hotkeys-hook: 3.4.7_biqbaboplfbrettd7655fr4n2y
@@ -851,6 +853,11 @@ packages:
 
   /electron-to-chromium/1.4.210:
     resolution: {integrity: sha512-kSiX4tuyZijV7Cz0MWVmGT8K2siqaOA4Z66K5dCttPPRh0HicOcOAEj1KlC8O8J1aOS/1M8rGofOzksLKaHWcQ==}
+
+  /encoding-japanese/2.0.0:
+    resolution: {integrity: sha512-++P0RhebUC8MJAwJOsT93dT+5oc5oPImp1HubZpAuCZ5kTLnhuuBhKHj2jJeO/Gj93idPBWmIuQ9QWMe5rX3pQ==}
+    engines: {node: '>=8.10.0'}
+    dev: false
 
   /error-ex/1.3.2:
     resolution: {integrity: sha512-7dFHNmqeFSEt2ZBsCriorKnn3Z2pj+fd9kmI6QoWw4//DL+icEBfc0U7qJCisqrTsKTjw4fNFy2pW9OqStD84g==}
