@@ -7,6 +7,7 @@ import {
 } from "@mui/material";
 import { useLocalStorage } from "react-use";
 import { ecSites } from "../ec-sites";
+import { sjisEncode } from "../util";
 import ResultItem from "./ResultItem";
 
 const Results = ({ searchQuery }: { searchQuery: string }) => {
@@ -35,10 +36,13 @@ const Results = ({ searchQuery }: { searchQuery: string }) => {
         </ListSubheader>
       }
     >
-      {ecSites.map(({ id, name, baseUrl, icon }) => (
+      {ecSites.map(({ id, name, baseUrl, icon, encode }) => (
         <ResultItem
           name={name}
-          url={baseUrl.replace("${searchQuery}", searchQuery)}
+          url={baseUrl.replace(
+            "${searchQuery}",
+            encode === "SJIS" ? sjisEncode(searchQuery) : searchQuery
+          )}
           showUrl={showUrl ?? true}
           icon={icon}
           key={id}

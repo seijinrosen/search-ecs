@@ -4,7 +4,15 @@ import { DiYahooSmall } from "react-icons/di";
 import { FaAmazon } from "react-icons/fa";
 import { SiRakuten } from "react-icons/si";
 
-export const ecSites = [
+type ECSiteType = {
+  id: number;
+  name: string;
+  baseUrl: string;
+  icon: JSX.Element;
+  encode?: string;
+};
+
+export const ecSites: ECSiteType[] = [
   {
     id: 0,
     name: "Amazon.co.jp",
@@ -34,5 +42,12 @@ export const ecSites = [
     name: "Yahoo!ショッピング",
     baseUrl: "https://shopping.yahoo.co.jp/search?p=${searchQuery}",
     icon: <DiYahooSmall />,
+  },
+  {
+    id: 5,
+    name: "価格.com",
+    baseUrl: "https://kakaku.com/search_results/${searchQuery}/",
+    icon: <Typography variant="h5">価</Typography>,
+    encode: "SJIS",
   },
 ];
