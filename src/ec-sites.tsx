@@ -50,4 +50,10 @@ export const ecSites: ECSiteType[] = [
     icon: <Typography variant="h5">価</Typography>,
     encode: "SJIS",
   },
+  {
+    id: 6,
+    name: "メルカリ",
+    baseUrl: "https://jp.mercari.com/search?keyword=${searchQuery}",
+    icon: <Typography variant="h5">メ</Typography>,
+  },
 ];
