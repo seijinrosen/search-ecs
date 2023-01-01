@@ -20,3 +20,4 @@ echo "auto-install-peers=true" > .npmrc
 
 pnpm add encoding-japanese
 pnpm add --save-dev @types/encoding-japanese
+pnpm add --save-dev prettier
