@@ -25,3 +25,4 @@ pnpm add --save-dev cspell
 pnpm dlx husky-init && pnpm install
 npm init @eslint/config
 pnpm add --save-dev eslint-config-prettier
+pnpm add --save-dev eslint-plugin-import
