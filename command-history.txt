@@ -20,3 +20,9 @@ echo "auto-install-peers=true" > .npmrc
 
 pnpm add encoding-japanese
 pnpm add --save-dev @types/encoding-japanese
+pnpm add --save-dev prettier
+pnpm add --save-dev cspell
+pnpm dlx husky-init && pnpm install
+npm init @eslint/config
+pnpm add --save-dev eslint-config-prettier
+pnpm add --save-dev eslint-plugin-import

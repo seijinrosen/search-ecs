@@ -1,10 +1,13 @@
 {
+  "ignorePaths": ["pnpm-lock.yaml"],
   "words": [
+    "iconify",
     "npmrc",
     "pnpm",
     "Rakuten",
     "seijinrosen",
     "Vercel",
-    "vite"
+    "vite",
+    "xlink"
   ]
 }
