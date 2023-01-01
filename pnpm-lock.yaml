@@ -11,6 +11,7 @@ specifiers:
   '@vitejs/plugin-react': 3.0.0
   cspell: ^6.18.1
   encoding-japanese: ^2.0.0
+  husky: ^8.0.0
   prettier: ^2.8.1
   react: 18.2.0
   react-dom: 18.2.0
@@ -38,6 +39,7 @@ devDependencies:
   '@types/react-dom': 18.0.10
   '@vitejs/plugin-react': 3.0.0_vite@4.0.3
   cspell: 6.18.1
+  husky: 8.0.2
   prettier: 2.8.1
   typescript: 4.9.4
   vite: 4.0.3
@@ -1699,6 +1701,12 @@ packages:
     dependencies:
       react-is: 16.13.1
     dev: false
+
+  /husky/8.0.2:
+    resolution: {integrity: sha512-Tkv80jtvbnkK3mYWxPZePGFpQ/tT3HNSs/sasF9P2YfkMezDl3ON37YN6jUUI4eTg5LcyVynlb6r4eyvOmspvg==}
+    engines: {node: '>=14'}
+    hasBin: true
+    dev: true
 
   /hyphenate-style-name/1.0.4:
     resolution: {integrity: sha512-ygGZLjmXfPHj+ZWh6LwbC37l43MhfztxetbFCoYTM2VjkIUpeHgSNn7QIyVFj7YQ1Wl9Cbw5sholVJPzWvC2MQ==}
