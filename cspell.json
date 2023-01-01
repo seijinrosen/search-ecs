@@ -1,7 +1,5 @@
 {
-  "ignorePaths": [
-    "pnpm-lock.yaml"
-  ],
+  "ignorePaths": ["pnpm-lock.yaml"],
   "words": [
     "iconify",
     "npmrc",
