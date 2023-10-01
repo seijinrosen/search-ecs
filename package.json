@@ -34,7 +34,7 @@
     "@vitejs/plugin-react": "4.1.0",
     "cspell": "^6.18.1",
     "eslint": "^8.31.0",
-    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-react": "^7.31.11",
     "husky": "^8.0.0",
