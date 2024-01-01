@@ -23,7 +23,7 @@
     "react-dom": "18.2.0",
     "react-hotkeys-hook": "4.4.1",
     "react-icons": "4.11.0",
-    "react-use": "17.4.0"
+    "react-use": "17.4.2"
   },
   "devDependencies": {
     "@types/encoding-japanese": "^2.0.1",
