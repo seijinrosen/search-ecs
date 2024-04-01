@@ -32,7 +32,7 @@ dependencies:
   '@emotion/styled': 11.11.5_xfkd4dvrz3a5v3iij734l3bwmm
   '@mui/icons-material': 5.15.14_k7jfwvhcfgsgkvxu22pyntnaqm
   '@mui/material': 5.15.14_j4ez762r3gpuee4l6rmchbthxi
-  encoding-japanese: 2.0.0
+  encoding-japanese: 2.1.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-hotkeys-hook: 4.4.1_biqbaboplfbrettd7655fr4n2y
@@ -40,7 +40,7 @@ dependencies:
   react-use: 17.4.2_biqbaboplfbrettd7655fr4n2y
 
 devDependencies:
-  '@types/encoding-japanese': 2.0.1
+  '@types/encoding-japanese': 2.0.5
   '@types/react': 18.2.73
   '@types/react-dom': 18.2.23
   '@typescript-eslint/eslint-plugin': 6.7.3_wgagwqbbzxlblxv6qm4exrnfle
@@ -1405,8 +1405,8 @@ packages:
       '@babel/types': 7.23.6
     dev: true
 
-  /@types/encoding-japanese/2.0.1:
-    resolution: {integrity: sha512-JaCXs2HLniKY8xXeWlg8MAtd4iKhNh8LwutW3yDMWY4usEdTZ2va1x9kd8V3179OAIUTgGQVA63XJrHettpVFQ==}
+  /@types/encoding-japanese/2.0.5:
+    resolution: {integrity: sha512-LjOB95Ri43cz+zZluJFFqtZGL/Pg80V/cM8ksIVuFV6INh5Ehc82iLbQyQ6heiSW8vmTzcg0hPKU+0+Em3yc1g==}
     dev: true
 
   /@types/js-cookie/2.2.7:
@@ -2107,8 +2107,8 @@ packages:
     resolution: {integrity: sha512-1n7zWYh8eS0L9Uy+GskE0lkBUNK83cXTVJI0pU3mGprFsbfSdAc15VTFbo+A+Bq4pwstmL30AVcEU3Fo463lNg==}
     dev: true
 
-  /encoding-japanese/2.0.0:
-    resolution: {integrity: sha512-++P0RhebUC8MJAwJOsT93dT+5oc5oPImp1HubZpAuCZ5kTLnhuuBhKHj2jJeO/Gj93idPBWmIuQ9QWMe5rX3pQ==}
+  /encoding-japanese/2.1.0:
+    resolution: {integrity: sha512-58XySVxUgVlBikBTbQ8WdDxBDHIdXucB16LO5PBHR8t75D54wQrNo4cg+58+R1CtJfKnsVsvt9XlteRaR8xw1w==}
     engines: {node: '>=8.10.0'}
     dev: false
 
