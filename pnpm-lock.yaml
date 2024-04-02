@@ -23,7 +23,7 @@ specifiers:
   react-dom: 18.2.0
   react-hotkeys-hook: 4.5.0
   react-icons: 4.12.0
-  react-use: 17.4.2
+  react-use: 17.5.0
   typescript: 5.3.3
   vite: 5.0.10
 
@@ -37,7 +37,7 @@ dependencies:
   react-dom: 18.2.0_react@18.2.0
   react-hotkeys-hook: 4.5.0_biqbaboplfbrettd7655fr4n2y
   react-icons: 4.12.0_react@18.2.0
-  react-use: 17.4.2_biqbaboplfbrettd7655fr4n2y
+  react-use: 17.5.0_biqbaboplfbrettd7655fr4n2y
 
 devDependencies:
   '@types/encoding-japanese': 2.0.5
@@ -1047,7 +1047,7 @@ packages:
     engines: {node: '>=6.0.0'}
     dependencies:
       '@jridgewell/set-array': 1.1.2
-      '@jridgewell/sourcemap-codec': 1.4.14
+      '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
 
   /@jridgewell/gen-mapping/0.3.2:
@@ -1055,7 +1055,7 @@ packages:
     engines: {node: '>=6.0.0'}
     dependencies:
       '@jridgewell/set-array': 1.1.2
-      '@jridgewell/sourcemap-codec': 1.4.14
+      '@jridgewell/sourcemap-codec': 1.4.15
       '@jridgewell/trace-mapping': 0.3.18
     dev: true
 
@@ -1075,7 +1075,6 @@ packages:
 
   /@jridgewell/sourcemap-codec/1.4.15:
     resolution: {integrity: sha512-eF2rxCRulEKXHTRiDrDy6erMYWqNw4LPdQ8UQA4huuxaQsVeRPFl2oM8oDGxMFhJUWZf9McpLtJasDDZb/Bpeg==}
-    dev: false
 
   /@jridgewell/trace-mapping/0.3.18:
     resolution: {integrity: sha512-w+niJYzMHdd7USdiH2U6869nqhD2nbfZXND5Yp93qIbEmnDNk7PD48o+YchRVpzMU7M6jVCbenTR7PA1FLQ9pA==}
@@ -3330,8 +3329,8 @@ packages:
       tslib: 2.4.0
     dev: false
 
-  /react-use/17.4.2_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-1jPtmWLD8OJJNYCdYLJEH/HM+bPDfJuyGwCYeJFgPmWY8ttwpgZnW5QnzgM55CYUByUiTjHxsGOnEpLl6yQaoQ==}
+  /react-use/17.5.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-PbfwSPMwp/hoL847rLnm/qkjg3sTRCvn6YhUZiHaUa3FA6/aNoFX79ul5Xt70O1rK+9GxSVqkY0eTwMdsR/bWg==}
     peerDependencies:
       react: '*'
       react-dom: '*'
