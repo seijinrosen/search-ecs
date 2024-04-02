@@ -17,7 +17,7 @@ specifiers:
   eslint-config-prettier: ^9.0.0
   eslint-plugin-import: ^2.26.0
   eslint-plugin-react: ^7.31.11
-  husky: ^8.0.0
+  husky: ^9.0.0
   prettier: ^3.0.0
   react: 18.2.0
   react-dom: 18.2.0
@@ -51,7 +51,7 @@ devDependencies:
   eslint-config-prettier: 9.0.0_eslint@8.57.0
   eslint-plugin-import: 2.26.0_s3ug6xptwbxi2jkqdj5mra3key
   eslint-plugin-react: 7.31.11_eslint@8.57.0
-  husky: 8.0.3
+  husky: 9.0.11
   prettier: 3.2.5
   typescript: 5.3.3
   vite: 5.2.7
@@ -2746,9 +2746,9 @@ packages:
       react-is: 16.13.1
     dev: false
 
-  /husky/8.0.3:
-    resolution: {integrity: sha512-+dQSyqPh4x1hlO1swXBiNb2HzTDN1I2IGLQx1GrBuiqFJfoMrnZWwVmatvSiO+Iz8fBUnf+lekwNo4c2LlXItg==}
-    engines: {node: '>=14'}
+  /husky/9.0.11:
+    resolution: {integrity: sha512-AB6lFlbwwyIqMdHYhwPe+kjOC3Oc5P3nThEoW/AaO2BX3vJDjWPFxYLxokUZOo6RNX20He3AaT8sESs9NJcmEw==}
+    engines: {node: '>=18'}
     hasBin: true
     dev: true
 
