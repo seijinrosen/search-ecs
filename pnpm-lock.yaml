@@ -22,7 +22,7 @@ specifiers:
   react: 18.2.0
   react-dom: 18.2.0
   react-hotkeys-hook: 4.5.0
-  react-icons: 4.12.0
+  react-icons: 5.0.1
   react-use: 17.5.0
   typescript: 5.4.3
   vite: 5.2.7
@@ -36,7 +36,7 @@ dependencies:
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-hotkeys-hook: 4.5.0_biqbaboplfbrettd7655fr4n2y
-  react-icons: 4.12.0_react@18.2.0
+  react-icons: 5.0.1_react@18.2.0
   react-use: 17.5.0_biqbaboplfbrettd7655fr4n2y
 
 devDependencies:
@@ -3298,8 +3298,8 @@ packages:
       react-dom: 18.2.0_react@18.2.0
     dev: false
 
-  /react-icons/4.12.0_react@18.2.0:
-    resolution: {integrity: sha512-IBaDuHiShdZqmfc/TwHu6+d6k2ltNCf3AszxNmjJc1KUfXdEeRJOKyNvLmAHaarhzGmTSVygNdyu8/opXv2gaw==}
+  /react-icons/5.0.1_react@18.2.0:
+    resolution: {integrity: sha512-WqLZJ4bLzlhmsvme6iFdgO8gfZP17rfjYEJ2m9RsZjZ+cc4k1hTzknEz63YS1MeT50kVzoa1Nz36f4BEx+Wigw==}
     peerDependencies:
       react: '*'
     dependencies:
