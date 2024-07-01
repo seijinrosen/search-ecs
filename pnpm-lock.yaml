@@ -32,7 +32,7 @@ dependencies:
   '@emotion/styled': 11.11.5_xfkd4dvrz3a5v3iij734l3bwmm
   '@mui/icons-material': 5.15.21_enduzfquw3sdfkbhiowy76kfze
   '@mui/material': 5.15.21_j4ez762r3gpuee4l6rmchbthxi
-  encoding-japanese: 2.1.0
+  encoding-japanese: 2.2.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-hotkeys-hook: 4.5.0_biqbaboplfbrettd7655fr4n2y
@@ -2147,8 +2147,8 @@ packages:
     resolution: {integrity: sha512-1n7zWYh8eS0L9Uy+GskE0lkBUNK83cXTVJI0pU3mGprFsbfSdAc15VTFbo+A+Bq4pwstmL30AVcEU3Fo463lNg==}
     dev: true
 
-  /encoding-japanese/2.1.0:
-    resolution: {integrity: sha512-58XySVxUgVlBikBTbQ8WdDxBDHIdXucB16LO5PBHR8t75D54wQrNo4cg+58+R1CtJfKnsVsvt9XlteRaR8xw1w==}
+  /encoding-japanese/2.2.0:
+    resolution: {integrity: sha512-EuJWwlHPZ1LbADuKTClvHtwbaFn4rOD+dRAbWysqEOXRc2Uui0hJInNJrsdH0c+OhJA4nrCBdSkW4DD5YxAo6A==}
     engines: {node: '>=8.10.0'}
     dev: false
 
