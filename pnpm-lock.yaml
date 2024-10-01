@@ -21,7 +21,7 @@ specifiers:
   prettier: ^3.0.0
   react: 18.3.1
   react-dom: 18.3.1
-  react-hotkeys-hook: 4.5.0
+  react-hotkeys-hook: 4.5.1
   react-icons: 5.2.1
   react-use: 17.5.0
   typescript: 5.5.3
@@ -35,7 +35,7 @@ dependencies:
   encoding-japanese: 2.2.0
   react: 18.3.1
   react-dom: 18.3.1_react@18.3.1
-  react-hotkeys-hook: 4.5.0_nnrd3gsncyragczmpvfhocinkq
+  react-hotkeys-hook: 4.5.1_nnrd3gsncyragczmpvfhocinkq
   react-icons: 5.2.1_react@18.3.1
   react-use: 17.5.0_nnrd3gsncyragczmpvfhocinkq
 
@@ -3271,8 +3271,8 @@ packages:
       scheduler: 0.23.2
     dev: false
 
-  /react-hotkeys-hook/4.5.0_nnrd3gsncyragczmpvfhocinkq:
-    resolution: {integrity: sha512-Samb85GSgAWFQNvVt3PS90LPPGSf9mkH/r4au81ZP1yOIFayLC3QAvqTgGtJ8YEDMXtPmaVBs6NgipHO6h4Mug==}
+  /react-hotkeys-hook/4.5.1_nnrd3gsncyragczmpvfhocinkq:
+    resolution: {integrity: sha512-scAEJOh3Irm0g95NIn6+tQVf/OICCjsQsC9NBHfQws/Vxw4sfq1tDQut5fhTEvPraXhu/sHxRd9lOtxzyYuNAg==}
     peerDependencies:
       react: '>=16.8.1'
       react-dom: '>=16.8.1'
