@@ -23,7 +23,7 @@ specifiers:
   react-dom: 18.3.1
   react-hotkeys-hook: 4.5.1
   react-icons: 5.3.0
-  react-use: 17.5.1
+  react-use: 17.6.0
   typescript: 5.6.2
   vite: 5.4.8
 
@@ -37,7 +37,7 @@ dependencies:
   react-dom: 18.3.1_react@18.3.1
   react-hotkeys-hook: 4.5.1_nnrd3gsncyragczmpvfhocinkq
   react-icons: 5.3.0_react@18.3.1
-  react-use: 17.5.1_nnrd3gsncyragczmpvfhocinkq
+  react-use: 17.6.0_nnrd3gsncyragczmpvfhocinkq
 
 devDependencies:
   '@types/encoding-japanese': 2.2.1
@@ -1739,7 +1739,7 @@ packages:
     resolution: {integrity: sha512-Cg7TFGpIr01vOQNODXOOaGz2NpCU5gl8x1qJFbb6hbZxR7XrcE2vtbAsTAbJ7/xwJtUuJEw8K8Zr/AE0LHlesg==}
     engines: {node: '>=10', npm: '>=6'}
     dependencies:
-      '@babel/runtime': 7.24.1
+      '@babel/runtime': 7.25.7
       cosmiconfig: 7.0.1
       resolve: 1.22.1
     dev: false
@@ -3255,8 +3255,8 @@ packages:
       tslib: 2.4.0
     dev: false
 
-  /react-use/17.5.1_nnrd3gsncyragczmpvfhocinkq:
-    resolution: {integrity: sha512-LG/uPEVRflLWMwi3j/sZqR00nF6JGqTTDblkXK2nzXsIvij06hXl1V/MZIlwj1OKIQUtlh1l9jK8gLsRyCQxMg==}
+  /react-use/17.6.0_nnrd3gsncyragczmpvfhocinkq:
+    resolution: {integrity: sha512-OmedEScUMKFfzn1Ir8dBxiLLSOzhKe/dPZwVxcujweSj45aNM7BEGPb9BEVIgVEqEXx6f3/TsXzwIktNgUR02g==}
     peerDependencies:
       react: '*'
       react-dom: '*'
@@ -3368,7 +3368,7 @@ packages:
   /rtl-css-js/1.16.1:
     resolution: {integrity: sha512-lRQgou1mu19e+Ya0LsTvKrVJ5TYUbqCVPAiImX3UfLTenarvPUl1QFdvu5Z3PYmHT9RCcwIfbjRQBntExyj3Zg==}
     dependencies:
-      '@babel/runtime': 7.24.1
+      '@babel/runtime': 7.25.7
     dev: false
 
   /run-parallel/1.2.0:
