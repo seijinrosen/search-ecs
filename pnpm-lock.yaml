@@ -51,7 +51,7 @@ devDependencies:
   eslint-config-prettier: 9.0.0_eslint@9.11.1
   eslint-plugin-import: 2.26.0_3pqovzjqekfgoexim27ephw6ce
   eslint-plugin-react: 7.31.11_eslint@9.11.1
-  husky: 9.1.6
+  husky: 9.1.7
   prettier: 3.3.3
   typescript: 5.6.2
   vite: 5.4.8
@@ -2684,8 +2684,8 @@ packages:
       react-is: 16.13.1
     dev: false
 
-  /husky/9.1.6:
-    resolution: {integrity: sha512-sqbjZKK7kf44hfdE94EoX8MZNk0n7HeW37O4YrVGCF4wzgQjp+akPAkfUK5LZ6KuR/6sqeAVuXHji+RzQgOn5A==}
+  /husky/9.1.7:
+    resolution: {integrity: sha512-5gs5ytaNjBrh5Ow3zrvdUUY+0VxIuWVL4i9irt6friV+BqdCfmV11CQTWMiBYWHbXhco+J1kHfTOUkePhCDvMA==}
     engines: {node: '>=18'}
     hasBin: true
     dev: true
