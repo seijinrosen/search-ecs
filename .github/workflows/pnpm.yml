@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-22.04
     strategy:
       matrix:
-        node-version: [20]
+        node-version: [22]
     steps:
       - uses: actions/checkout@v4
       - name: Install pnpm
@@ -24,7 +24,6 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Spell check
-        run: pnpm run cspell
+      - run: pnpm run cspell
 
       - run: pnpm run prettier:check
