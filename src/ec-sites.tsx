@@ -5,7 +5,6 @@ import { DiYahooSmall } from "react-icons/di";
 import { FaAmazon } from "react-icons/fa";
 import { SiRakuten } from "react-icons/si";
 
-
 type ECSiteType = {
   id: number;
   name: string;
