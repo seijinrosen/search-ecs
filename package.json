@@ -15,7 +15,7 @@
     "eslint:fix": "eslint --ext .tsx,.ts . --fix",
     "prettier:check": "prettier --check .",
     "prettier:write": "prettier --write .",
-    "prepare": "husky install",
+    "prepare": "husky",
     "types:check": "tsc --noEmit --pretty"
   },
   "dependencies": {
