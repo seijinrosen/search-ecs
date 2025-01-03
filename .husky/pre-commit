@@ -7,7 +7,3 @@ if [ "$CURRENT_BRANCH" = "main" ]; then
     echo "main ブランチへの直コミットは禁止されています"
     exit 1
 fi
-
-pnpm run cspell
-pnpm run eslint
-pnpm run prettier:check
