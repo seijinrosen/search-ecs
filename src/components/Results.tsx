@@ -28,7 +28,10 @@ const Results = ({ searchQuery }: { searchQuery: string }) => {
               />
             }
             label={
-              <Typography variant="caption" sx={{ userSelect: "none" }}>
+              <Typography
+                variant="caption"
+                sx={{ userSelect: "none" }}
+              >
                 Show URL
               </Typography>
             }

@@ -18,7 +18,13 @@ const Footer = () => (
     }}
   >
     <Container maxWidth="sm">
-      <Grid container justifyContent="center" spacing={3} mb={2} pb={2}>
+      <Grid
+        container
+        justifyContent="center"
+        spacing={3}
+        mb={2}
+        pb={2}
+      >
         <Grid item>
           <IconButton
             component="a"
