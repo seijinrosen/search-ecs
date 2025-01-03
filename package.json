@@ -12,6 +12,7 @@
     "preview": "vite preview",
     "cspell": "cspell '**'",
     "eslint": "eslint --ext .tsx,.ts .",
+    "eslint:fix": "eslint --ext .tsx,.ts . --fix",
     "prettier:check": "prettier --check .",
     "prettier:write": "prettier --write .",
     "prepare": "husky install",

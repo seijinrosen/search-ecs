@@ -1,10 +1,10 @@
 import GoogleIcon from "@mui/icons-material/Google";
 import { Typography } from "@mui/material";
+import type { JSX } from "react";
 import { DiYahooSmall } from "react-icons/di";
 import { FaAmazon } from "react-icons/fa";
 import { SiRakuten } from "react-icons/si";
 
-import type { JSX } from "react";
 
 type ECSiteType = {
   id: number;
