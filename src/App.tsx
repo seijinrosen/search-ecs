@@ -9,8 +9,14 @@ function App() {
 
   return (
     <Layout>
-      <Container component="main" maxWidth="md">
-        <Box mt={4} mb={5}>
+      <Container
+        component="main"
+        maxWidth="md"
+      >
+        <Box
+          mt={4}
+          mb={5}
+        >
           <SearchField
             searchQuery={searchQuery}
             setSearchQuery={setSearchQuery}

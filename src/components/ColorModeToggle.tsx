@@ -29,8 +29,14 @@ const ColorModeToggle = () => {
           onChange={colorMode.toggleColorMode}
         />
       </Tooltip>
-      <Tooltip arrow title="デバイスのカラーモード設定に従います">
-        <IconButton color="inherit" onClick={handleClick}>
+      <Tooltip
+        arrow
+        title="デバイスのカラーモード設定に従います"
+      >
+        <IconButton
+          color="inherit"
+          onClick={handleClick}
+        >
           <SettingsBrightnessIcon />
         </IconButton>
       </Tooltip>

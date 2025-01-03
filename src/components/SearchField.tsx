@@ -65,7 +65,10 @@ const SearchField = ({ searchQuery, setSearchQuery }: Props) => {
         InputProps={{
           endAdornment: searchQuery && (
             <InputAdornment position="end">
-              <Tooltip arrow title="消去">
+              <Tooltip
+                arrow
+                title="消去"
+              >
                 <ClearIcon
                   sx={{
                     cursor: "pointer",

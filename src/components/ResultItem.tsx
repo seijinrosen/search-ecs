@@ -31,7 +31,10 @@ const ResultItem = ({
       <ListItemAvatar>
         <Avatar>{icon}</Avatar>
       </ListItemAvatar>
-      <ListItemText primary={name} secondary={showUrl ? url : null} />
+      <ListItemText
+        primary={name}
+        secondary={showUrl ? url : null}
+      />
       <OpenInNewIcon />
     </ListItemButton>
   </ListItem>
