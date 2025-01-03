@@ -7,6 +7,8 @@ import {
   ListItemText,
 } from "@mui/material";
 
+import type { JSX } from "react";
+
 const ResultItem = ({
   name,
   url,
