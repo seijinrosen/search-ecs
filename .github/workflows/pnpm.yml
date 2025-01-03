@@ -23,3 +23,8 @@ jobs:
           cache: "pnpm"
       - name: Install dependencies
         run: pnpm install
+
+      - name: Spell check
+        run: pnpm run cspell
+
+      - run: pnpm run prettier:check
