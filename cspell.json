@@ -1,5 +1,6 @@
 {
   "ignorePaths": ["pnpm-lock.yaml"],
+  "useGitignore": true,
   "words": [
     "iconify",
     "npmrc",
