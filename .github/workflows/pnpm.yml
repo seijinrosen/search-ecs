@@ -25,5 +25,6 @@ jobs:
         run: pnpm install
 
       - run: pnpm run cspell
-
       - run: pnpm run prettier:check
+      - run: pnpm run types:check
+      - run: pnpm run eslint
