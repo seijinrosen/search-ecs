@@ -41,7 +41,7 @@ const Results = ({ searchQuery }: { searchQuery: string }) => {
           name={name}
           url={baseUrl.replace(
             "${searchQuery}",
-            encode === "SJIS" ? sjisEncode(searchQuery) : searchQuery
+            encode === "SJIS" ? sjisEncode(searchQuery) : searchQuery,
           )}
           showUrl={showUrl ?? true}
           icon={icon}

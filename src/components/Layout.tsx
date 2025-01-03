@@ -8,7 +8,7 @@ import Header from "./Header";
 
 const normalizePaletteMode = (
   prefersDarkMode: boolean,
-  paletteMode?: string
+  paletteMode?: string,
 ): "light" | "dark" => {
   if (paletteMode === "light") return "light";
   if (paletteMode === "dark") return "dark";
@@ -21,7 +21,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
     "light" | "dark"
   >("paletteMode");
   const [mode, setMode] = useState(
-    normalizePaletteMode(prefersDarkMode, paletteMode)
+    normalizePaletteMode(prefersDarkMode, paletteMode),
   );
   const colorMode = useMemo(
     () => ({
@@ -36,7 +36,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
         removePaletteMode();
       },
     }),
-    []
+    [],
   );
   const theme = useMemo(
     () =>
@@ -45,7 +45,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
           mode,
         },
       }),
-    [mode]
+    [mode],
   );
 
   return (
