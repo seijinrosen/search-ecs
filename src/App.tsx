@@ -22,6 +22,7 @@ function App() {
             setSearchQuery={setSearchQuery}
           />
         </Box>
+
         <Results searchQuery={searchQuery} />
       </Container>
     </Layout>

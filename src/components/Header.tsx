@@ -20,6 +20,7 @@ const Header = () => (
       >
         Search ECs
       </Typography>
+
       <ColorModeToggle />
     </Toolbar>
   </AppBar>

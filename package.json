@@ -7,7 +7,7 @@
     "build": "tsc && vite build",
     "cspell": "cspell '**'",
     "dev": "vite",
-    "eslint": "eslint --ext .tsx,.ts .",
+    "eslint": "eslint --ext .tsx,.ts . --report-unused-disable-directives --max-warnings 0",
     "eslint:fix": "eslint --ext .tsx,.ts . --fix",
     "prepare": "husky",
     "prettier:check": "prettier --check .",

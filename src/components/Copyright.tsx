@@ -7,6 +7,7 @@ const Copyright = () => (
     align="center"
   >
     {"Copyright © "}
+
     <Link
       color="inherit"
       href="https://github.com/seijinrosen"
@@ -15,6 +16,7 @@ const Copyright = () => (
     >
       seijinrosen
     </Link>{" "}
+
     {new Date().getFullYear()}.
   </Typography>
 );

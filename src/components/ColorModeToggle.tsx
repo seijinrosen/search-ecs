@@ -29,6 +29,7 @@ const ColorModeToggle = () => {
           onChange={colorMode.toggleColorMode}
         />
       </Tooltip>
+
       <Tooltip
         arrow
         title="デバイスのカラーモード設定に従います"
@@ -40,6 +41,7 @@ const ColorModeToggle = () => {
           <SettingsBrightnessIcon />
         </IconButton>
       </Tooltip>
+
       <Snackbar
         open={open}
         autoHideDuration={3000}
