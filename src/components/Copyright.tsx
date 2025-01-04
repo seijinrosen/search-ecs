@@ -6,7 +6,8 @@ const Copyright = () => (
     color="text.secondary"
     align="center"
   >
-    {"Copyright © "}
+    <span>Copyright © </span>
+
     <Link
       color="inherit"
       href="https://github.com/seijinrosen"
@@ -14,8 +15,9 @@ const Copyright = () => (
       rel="noopener noreferrer"
     >
       seijinrosen
-    </Link>{" "}
-    {new Date().getFullYear()}.
+    </Link>
+
+    <span> {new Date().getFullYear()}.</span>
   </Typography>
 );
 

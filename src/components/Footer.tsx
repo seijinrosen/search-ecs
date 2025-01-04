@@ -36,6 +36,7 @@ const Footer = () => (
             <GitHubIcon fontSize="large" />
           </IconButton>
         </Grid>
+
         <Grid item>
           <IconButton
             component="a"
@@ -48,6 +49,7 @@ const Footer = () => (
           </IconButton>
         </Grid>
       </Grid>
+
       <Copyright />
     </Container>
   </Box>

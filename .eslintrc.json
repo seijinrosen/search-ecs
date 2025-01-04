@@ -17,8 +17,19 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["react", "@typescript-eslint"],
+  "plugins": [
+    "react", //
+    "@typescript-eslint"
+  ],
   "rules": {
-    "import/order": [2, { "alphabetize": { "order": "asc" } }]
+    "import/order": [
+      2,
+      {
+        "alphabetize": {
+          "order": "asc"
+        }
+      }
+    ],
+    "react/jsx-newline": "warn"
   }
 }

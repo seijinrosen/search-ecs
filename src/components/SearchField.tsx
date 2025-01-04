@@ -53,6 +53,7 @@ const SearchField = ({ searchQuery, setSearchQuery }: Props) => {
         }}
         onClick={focusTextField}
       />
+
       <TextField
         value={searchQuery}
         onChange={(e) => setSearchQuery(e.target.value)}
@@ -83,6 +84,7 @@ const SearchField = ({ searchQuery, setSearchQuery }: Props) => {
           ),
         }}
       />
+
       {over600px && (
         <Tooltip
           arrow

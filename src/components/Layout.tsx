@@ -52,6 +52,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
+
         <Box
           sx={{
             display: "flex",
@@ -60,7 +61,9 @@ const Layout = ({ children }: { children: ReactNode }) => {
           }}
         >
           <Header />
+
           {children}
+
           <Footer />
         </Box>
       </ThemeProvider>
