@@ -22,11 +22,11 @@ const ResultItem = ({
 }) => (
   <ListItem disablePadding>
     <ListItemButton
-      divider
       component="a"
+      divider
       href={url}
-      target="_blank"
       rel="noopener noreferrer"
+      target="_blank"
     >
       <ListItemAvatar>
         <Avatar>{icon}</Avatar>

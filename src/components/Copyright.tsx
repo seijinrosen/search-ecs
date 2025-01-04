@@ -2,17 +2,17 @@ import { Link, Typography } from "@mui/material";
 
 const Copyright = () => (
   <Typography
-    variant="body2"
-    color="text.secondary"
     align="center"
+    color="text.secondary"
+    variant="body2"
   >
     <span>Copyright © </span>
 
     <Link
       color="inherit"
       href="https://github.com/seijinrosen"
-      target="_blank"
       rel="noopener noreferrer"
+      target="_blank"
     >
       seijinrosen
     </Link>

@@ -45,24 +45,16 @@ const SearchField = ({ searchQuery, setSearchQuery }: Props) => {
   return (
     <Box sx={{ display: "flex", alignItems: "flex-end" }}>
       <SearchIcon
+        onClick={focusTextField}
         sx={{
           color: "action.active",
           mr: 1,
           my: 0.5,
           cursor: "pointer",
         }}
-        onClick={focusTextField}
       />
 
       <TextField
-        value={searchQuery}
-        onChange={(e) => setSearchQuery(e.target.value)}
-        variant="standard"
-        fullWidth
-        label="Search..."
-        placeholder={`e.g., ${randomPlaceholder}`}
-        inputRef={inputRef}
-        autoFocus={over600px}
         InputProps={{
           endAdornment: searchQuery && (
             <InputAdornment position="end">
@@ -71,18 +63,26 @@ const SearchField = ({ searchQuery, setSearchQuery }: Props) => {
                 title="消去"
               >
                 <ClearIcon
-                  sx={{
-                    cursor: "pointer",
-                  }}
                   onClick={() => {
                     setSearchQuery("");
                     focusTextField();
+                  }}
+                  sx={{
+                    cursor: "pointer",
                   }}
                 />
               </Tooltip>
             </InputAdornment>
           ),
         }}
+        autoFocus={over600px}
+        fullWidth
+        inputRef={inputRef}
+        label="Search..."
+        onChange={(e) => setSearchQuery(e.target.value)}
+        placeholder={`e.g., ${randomPlaceholder}`}
+        value={searchQuery}
+        variant="standard"
       />
 
       {over600px && (
@@ -91,6 +91,7 @@ const SearchField = ({ searchQuery, setSearchQuery }: Props) => {
           title='スラッシュキー ( "/" ) を押して検索フィールドに移動できます'
         >
           <Box
+            onClick={focusTextField}
             sx={{
               border: "solid 1px",
               borderRadius: "5px",
@@ -100,7 +101,6 @@ const SearchField = ({ searchQuery, setSearchQuery }: Props) => {
               userSelect: "none",
               cursor: "pointer",
             }}
-            onClick={focusTextField}
           >
             /
           </Box>

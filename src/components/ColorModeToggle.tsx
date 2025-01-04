@@ -43,10 +43,10 @@ const ColorModeToggle = () => {
       </Tooltip>
 
       <Snackbar
-        open={open}
         autoHideDuration={3000}
-        onClose={() => setOpen(false)}
         message="カラーモードをリセットしました"
+        onClose={() => setOpen(false)}
+        open={open}
       />
     </>
   );

@@ -5,10 +5,9 @@ const Header = () => (
   <AppBar position="sticky">
     <Toolbar>
       <Typography
-        variant="h6"
-        noWrap
         component="a"
         href="/"
+        noWrap
         sx={{
           flexGrow: 1,
           fontFamily: "monospace",
@@ -17,6 +16,7 @@ const Header = () => (
           color: "inherit",
           textDecoration: "none",
         }}
+        variant="h6"
       >
         Search ECs
       </Typography>

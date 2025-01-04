@@ -21,17 +21,17 @@ const Footer = () => (
       <Grid
         container
         justifyContent="center"
-        spacing={3}
         mb={2}
         pb={2}
+        spacing={3}
       >
         <Grid item>
           <IconButton
+            color="inherit"
             component="a"
             href="https://github.com/seijinrosen/search-ecs"
-            target="_blank"
             rel="noopener noreferrer"
-            color="inherit"
+            target="_blank"
           >
             <GitHubIcon fontSize="large" />
           </IconButton>
@@ -39,11 +39,11 @@ const Footer = () => (
 
         <Grid item>
           <IconButton
+            color="info"
             component="a"
             href="https://twitter.com/seijinrosen"
-            target="_blank"
             rel="noopener noreferrer"
-            color="info"
+            target="_blank"
           >
             <TwitterIcon fontSize="large" />
           </IconButton>

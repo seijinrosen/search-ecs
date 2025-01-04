@@ -14,8 +14,8 @@ function App() {
         maxWidth="md"
       >
         <Box
-          mt={4}
           mb={5}
+          mt={4}
         >
           <SearchField
             searchQuery={searchQuery}
