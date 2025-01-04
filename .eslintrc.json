@@ -30,6 +30,7 @@
         }
       }
     ],
-    "react/jsx-newline": "warn"
+    "react/jsx-newline": "warn",
+    "react/jsx-sort-props": "warn"
   }
 }

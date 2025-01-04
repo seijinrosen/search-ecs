@@ -29,8 +29,8 @@ const Results = ({ searchQuery }: { searchQuery: string }) => {
             }
             label={
               <Typography
-                variant="caption"
                 sx={{ userSelect: "none" }}
+                variant="caption"
               >
                 Show URL
               </Typography>
@@ -41,14 +41,14 @@ const Results = ({ searchQuery }: { searchQuery: string }) => {
     >
       {ecSites.map(({ id, name, baseUrl, icon, encode }) => (
         <ResultItem
+          icon={icon}
+          key={id}
           name={name}
+          showUrl={showUrl ?? true}
           url={baseUrl.replace(
             "${searchQuery}",
             encode === "SJIS" ? sjisEncode(searchQuery) : searchQuery,
           )}
-          showUrl={showUrl ?? true}
-          icon={icon}
-          key={id}
         />
       ))}
     </List>
