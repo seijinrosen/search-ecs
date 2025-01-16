@@ -4,6 +4,7 @@ check:
 	pnpm run types:check
 	pnpm run eslint
 	pnpm run build
+	pnpm run knip
 
 clean:
 	rm -r node_modules/
