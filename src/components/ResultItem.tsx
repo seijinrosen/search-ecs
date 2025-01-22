@@ -7,19 +7,14 @@ import {
   ListItemText,
 } from "@mui/material";
 
-import type { JSX } from "react";
-
-const ResultItem = ({
-  name,
-  url,
-  showUrl,
-  icon,
-}: {
+interface Props {
   name: string;
   url: string;
   showUrl: boolean;
-  icon: JSX.Element;
-}) => (
+  icon: React.ReactNode;
+}
+
+const ResultItem = ({ name, url, showUrl, icon }: Props) => (
   <ListItem disablePadding>
     <ListItemButton
       component="a"

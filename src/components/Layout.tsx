@@ -1,6 +1,5 @@
 import { Box, createTheme, CssBaseline, useMediaQuery } from "@mui/material";
 import { ThemeProvider } from "@mui/material/styles";
-import type { ReactNode } from "react";
 import { useMemo, useState } from "react";
 import { useLocalStorage } from "react-use";
 import ColorModeContext from "../contexts/ColorModeContext";
@@ -11,12 +10,18 @@ const normalizePaletteMode = (
   prefersDarkMode: boolean,
   paletteMode?: string,
 ): "light" | "dark" => {
-  if (paletteMode === "light") return "light";
-  if (paletteMode === "dark") return "dark";
+  if (paletteMode === "light") {
+    return "light";
+  }
+
+  if (paletteMode === "dark") {
+    return "dark";
+  }
+
   return prefersDarkMode ? "dark" : "light";
 };
 
-const Layout = ({ children }: { children: ReactNode }) => {
+const Layout = ({ children }: React.PropsWithChildren) => {
   const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
 
   const [paletteMode, savePaletteMode, removePaletteMode] = useLocalStorage<

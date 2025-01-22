@@ -43,7 +43,10 @@ const SearchField = ({ searchQuery, setSearchQuery }: Props) => {
   useEffect(() => {
     setMounted(true);
   }, []);
-  if (!mounted) return <></>;
+
+  if (!mounted) {
+    return <></>;
+  }
 
   return (
     <Box sx={{ display: "flex", alignItems: "flex-end" }}>
