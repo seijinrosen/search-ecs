@@ -1,0 +1,22 @@
+{
+  "memoComponent": {
+    "scope": "typescriptreact",
+    "prefix": "memoComponent",
+    "description": "メモ化コンポーネント",
+    "body": [
+      "import { memo } from 'react';",
+      "",
+      "type Props = {",
+      "};",
+      "",
+      "export const $1 = memo(function $1({  }: Props) {",
+      "  return (",
+      "    <div>",
+      "      <div>aaa</div>",
+      "    </div>",
+      "  );",
+      "});",
+      "",
+    ],
+  },
+}

@@ -1,11 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+
 import App from "./App";
 
-ReactDOM.createRoot(document.getElementById("root")!).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-);
+const rootElement = document.getElementById("root");
 
-console.log("2025/01/04 g");
+if (rootElement) {
+  ReactDOM.createRoot(rootElement).render(
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>,
+  );
+}
+
+console.log("2025/01/23 a");

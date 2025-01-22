@@ -19,7 +19,8 @@ const placeholderCandidates = [
   "紙コップ",
   "絆創膏",
   "鼻炎薬",
-];
+] as const;
+
 const randomPlaceholder = randomChoice(placeholderCandidates);
 
 interface Props {
@@ -57,26 +58,6 @@ const SearchField = ({ searchQuery, setSearchQuery }: Props) => {
       />
 
       <TextField
-        InputProps={{
-          endAdornment: searchQuery && (
-            <InputAdornment position="end">
-              <Tooltip
-                arrow
-                title="消去"
-              >
-                <ClearIcon
-                  onClick={() => {
-                    setSearchQuery("");
-                    focusTextField();
-                  }}
-                  sx={{
-                    cursor: "pointer",
-                  }}
-                />
-              </Tooltip>
-            </InputAdornment>
-          ),
-        }}
         autoFocus={over600px}
         fullWidth
         inputRef={inputRef}
@@ -85,6 +66,28 @@ const SearchField = ({ searchQuery, setSearchQuery }: Props) => {
           setSearchQuery(e.target.value);
         }}
         placeholder={`e.g., ${randomPlaceholder}`}
+        slotProps={{
+          input: {
+            endAdornment: searchQuery && (
+              <InputAdornment position="end">
+                <Tooltip
+                  arrow
+                  title="消去"
+                >
+                  <ClearIcon
+                    onClick={() => {
+                      setSearchQuery("");
+                      focusTextField();
+                    }}
+                    sx={{
+                      cursor: "pointer",
+                    }}
+                  />
+                </Tooltip>
+              </InputAdornment>
+            ),
+          },
+        }}
         value={searchQuery}
         variant="standard"
       />

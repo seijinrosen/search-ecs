@@ -1,6 +1,6 @@
 import GitHubIcon from "@mui/icons-material/GitHub";
 import TwitterIcon from "@mui/icons-material/Twitter";
-import { Box, Container, Grid, IconButton } from "@mui/material";
+import { Box, Container, Grid2, IconButton } from "@mui/material";
 import Copyright from "./Copyright";
 
 const Footer = () => (
@@ -18,14 +18,14 @@ const Footer = () => (
     }}
   >
     <Container maxWidth="sm">
-      <Grid
+      <Grid2
         container
         justifyContent="center"
         mb={2}
         pb={2}
         spacing={3}
       >
-        <Grid item>
+        <Grid2>
           <IconButton
             color="inherit"
             component="a"
@@ -35,9 +35,9 @@ const Footer = () => (
           >
             <GitHubIcon fontSize="large" />
           </IconButton>
-        </Grid>
+        </Grid2>
 
-        <Grid item>
+        <Grid2>
           <IconButton
             color="info"
             component="a"
@@ -47,8 +47,8 @@ const Footer = () => (
           >
             <TwitterIcon fontSize="large" />
           </IconButton>
-        </Grid>
-      </Grid>
+        </Grid2>
+      </Grid2>
 
       <Copyright />
     </Container>
