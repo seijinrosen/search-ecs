@@ -1,4 +1,5 @@
 check:
+	pnpm run coverage
 	pnpm run cspell
 	pnpm run prettier:check
 	pnpm run types:check
