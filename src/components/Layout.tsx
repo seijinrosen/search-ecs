@@ -1,6 +1,7 @@
 import { Box, createTheme, CssBaseline, useMediaQuery } from "@mui/material";
 import { ThemeProvider } from "@mui/material/styles";
-import { ReactNode, useMemo, useState } from "react";
+import type { ReactNode } from "react";
+import { useMemo, useState } from "react";
 import { useLocalStorage } from "react-use";
 import ColorModeContext from "../contexts/ColorModeContext";
 import Footer from "./Footer";

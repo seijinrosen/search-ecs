@@ -30,6 +30,7 @@
   "rules": {
     "eqeqeq": ["error", "smart"],
 
+    "@typescript-eslint/consistent-type-imports": "warn",
     "@typescript-eslint/strict-boolean-expressions": "error",
 
     "import/order": [
