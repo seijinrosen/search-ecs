@@ -24,7 +24,9 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
+      - run: pnpm run coverage
       - run: pnpm run cspell
       - run: pnpm run prettier:check
       - run: pnpm run types:check
       - run: pnpm run eslint
+      - run: pnpm run knip

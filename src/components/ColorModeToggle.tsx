@@ -45,7 +45,9 @@ const ColorModeToggle = () => {
       <Snackbar
         autoHideDuration={3000}
         message="カラーモードをリセットしました"
-        onClose={() => setOpen(false)}
+        onClose={() => {
+          setOpen(false);
+        }}
         open={open}
       />
     </>

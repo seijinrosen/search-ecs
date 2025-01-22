@@ -17,27 +17,32 @@ const normalizePaletteMode = (
 
 const Layout = ({ children }: { children: ReactNode }) => {
   const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
+
   const [paletteMode, savePaletteMode, removePaletteMode] = useLocalStorage<
     "light" | "dark"
   >("paletteMode");
+
   const [mode, setMode] = useState(
     normalizePaletteMode(prefersDarkMode, paletteMode),
   );
+
   const colorMode = useMemo(
     () => ({
-      toggleColorMode: () =>
+      toggleColorMode: () => {
         setMode((prevMode) => {
           const nextMode = prevMode === "light" ? "dark" : "light";
           savePaletteMode(nextMode);
           return nextMode;
-        }),
+        });
+      },
       resetColorMode: () => {
         setMode(prefersDarkMode ? "dark" : "light");
         removePaletteMode();
       },
     }),
-    [],
+    [prefersDarkMode, removePaletteMode, savePaletteMode],
   );
+
   const theme = useMemo(
     () =>
       createTheme({
