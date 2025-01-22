@@ -1,0 +1,7 @@
+iconify
+knip
+Rakuten
+seijinrosen
+Vercel
+vite
+xlink
