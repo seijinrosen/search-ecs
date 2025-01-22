@@ -22,10 +22,10 @@ const placeholderCandidates = [
 ];
 const randomPlaceholder = randomChoice(placeholderCandidates);
 
-type Props = {
+interface Props {
   searchQuery: string;
   setSearchQuery: React.Dispatch<React.SetStateAction<string>>;
-};
+}
 
 const SearchField = ({ searchQuery, setSearchQuery }: Props) => {
   const over600px = useMediaQuery("(min-width:600px)");
@@ -39,7 +39,9 @@ const SearchField = ({ searchQuery, setSearchQuery }: Props) => {
     focusTextField();
   });
 
-  useEffect(() => setMounted(true), []);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
   if (!mounted) return <></>;
 
   return (
@@ -79,7 +81,9 @@ const SearchField = ({ searchQuery, setSearchQuery }: Props) => {
         fullWidth
         inputRef={inputRef}
         label="Search..."
-        onChange={(e) => setSearchQuery(e.target.value)}
+        onChange={(e) => {
+          setSearchQuery(e.target.value);
+        }}
         placeholder={`e.g., ${randomPlaceholder}`}
         value={searchQuery}
         variant="standard"

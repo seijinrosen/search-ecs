@@ -25,12 +25,13 @@ const Layout = ({ children }: { children: ReactNode }) => {
   );
   const colorMode = useMemo(
     () => ({
-      toggleColorMode: () =>
+      toggleColorMode: () => {
         setMode((prevMode) => {
           const nextMode = prevMode === "light" ? "dark" : "light";
           savePaletteMode(nextMode);
           return nextMode;
-        }),
+        });
+      },
       resetColorMode: () => {
         setMode(prefersDarkMode ? "dark" : "light");
         removePaletteMode();

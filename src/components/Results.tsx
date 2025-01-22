@@ -24,7 +24,9 @@ const Results = ({ searchQuery }: { searchQuery: string }) => {
             control={
               <Checkbox
                 checked={showUrl}
-                onChange={(e) => saveShowUrl(e.target.checked)}
+                onChange={(e) => {
+                  saveShowUrl(e.target.checked);
+                }}
               />
             }
             label={

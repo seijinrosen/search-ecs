@@ -5,13 +5,13 @@ import { DiYahooSmall } from "react-icons/di";
 import { FaAmazon } from "react-icons/fa";
 import { SiRakuten } from "react-icons/si";
 
-type ECSiteType = {
+interface ECSiteType {
   id: number;
   name: string;
   baseUrl: string;
   icon: JSX.Element;
   encode?: string;
-};
+}
 
 export const ecSites: ECSiteType[] = [
   {
