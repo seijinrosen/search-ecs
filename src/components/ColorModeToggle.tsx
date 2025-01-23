@@ -4,15 +4,10 @@ import { useContext, useState } from "react";
 import ColorModeContext from "../contexts/ColorModeContext";
 import MaterialUISwitch from "./MaterialUISwitch";
 
-const ColorModeToggle = () => {
+function ColorModeToggle() {
   const theme = useTheme();
   const colorMode = useContext(ColorModeContext);
   const [open, setOpen] = useState(false);
-
-  const handleClick = () => {
-    colorMode.resetColorMode();
-    setOpen(true);
-  };
 
   return (
     <>
@@ -36,7 +31,10 @@ const ColorModeToggle = () => {
       >
         <IconButton
           color="inherit"
-          onClick={handleClick}
+          onClick={() => {
+            colorMode.resetColorMode();
+            setOpen(true);
+          }}
         >
           <SettingsBrightnessIcon />
         </IconButton>
@@ -52,6 +50,6 @@ const ColorModeToggle = () => {
       />
     </>
   );
-};
+}
 
 export default ColorModeToggle;

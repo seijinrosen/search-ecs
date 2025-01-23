@@ -7,7 +7,7 @@ import {
   Tooltip,
   useMediaQuery,
 } from "@mui/material";
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { useHotkeys } from "react-hotkeys-hook";
 import { randomChoice } from "../util";
 
@@ -24,16 +24,18 @@ const placeholderCandidates = [
 const randomPlaceholder = randomChoice(placeholderCandidates);
 
 interface Props {
-  searchQuery: string;
-  setSearchQuery: React.Dispatch<React.SetStateAction<string>>;
+  readonly searchQuery: string;
+  readonly setSearchQuery: React.Dispatch<React.SetStateAction<string>>;
 }
 
-const SearchField = ({ searchQuery, setSearchQuery }: Props) => {
+function SearchField({ searchQuery, setSearchQuery }: Props) {
   const over600px = useMediaQuery("(min-width:600px)");
   const inputRef = useRef<HTMLInputElement>(null);
   const [mounted, setMounted] = useState(false);
 
-  const focusTextField = () => inputRef.current?.focus();
+  const focusTextField = useCallback(() => {
+    inputRef.current?.focus();
+  }, []);
 
   useHotkeys("/", (e) => {
     e.preventDefault();
@@ -43,7 +45,10 @@ const SearchField = ({ searchQuery, setSearchQuery }: Props) => {
   useEffect(() => {
     setMounted(true);
   }, []);
-  if (!mounted) return <></>;
+
+  if (!mounted) {
+    return;
+  }
 
   return (
     <Box sx={{ display: "flex", alignItems: "flex-end" }}>
@@ -115,6 +120,6 @@ const SearchField = ({ searchQuery, setSearchQuery }: Props) => {
       )}
     </Box>
   );
-};
+}
 
 export default SearchField;

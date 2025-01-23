@@ -7,39 +7,36 @@ import {
   ListItemText,
 } from "@mui/material";
 
-import type { JSX } from "react";
+interface Props {
+  readonly name: string;
+  readonly url: string;
+  readonly showUrl: boolean;
+  readonly icon: React.ReactNode;
+}
 
-const ResultItem = ({
-  name,
-  url,
-  showUrl,
-  icon,
-}: {
-  name: string;
-  url: string;
-  showUrl: boolean;
-  icon: JSX.Element;
-}) => (
-  <ListItem disablePadding>
-    <ListItemButton
-      component="a"
-      divider
-      href={url}
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      <ListItemAvatar>
-        <Avatar>{icon}</Avatar>
-      </ListItemAvatar>
+function ResultItem({ name, url, showUrl, icon }: Props) {
+  return (
+    <ListItem disablePadding>
+      <ListItemButton
+        component="a"
+        divider
+        href={url}
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <ListItemAvatar>
+          <Avatar>{icon}</Avatar>
+        </ListItemAvatar>
 
-      <ListItemText
-        primary={name}
-        secondary={showUrl ? url : null}
-      />
+        <ListItemText
+          primary={name}
+          secondary={showUrl ? url : null}
+        />
 
-      <OpenInNewIcon />
-    </ListItemButton>
-  </ListItem>
-);
+        <OpenInNewIcon />
+      </ListItemButton>
+    </ListItem>
+  );
+}
 
 export default ResultItem;
