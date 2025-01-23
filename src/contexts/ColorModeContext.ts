@@ -1,6 +1,6 @@
 import { createContext } from "react";
 
-const ColorModeContext = createContext({
+export const ColorModeContext = createContext({
   resetColorMode: () => {
     //
   },
@@ -8,5 +8,3 @@ const ColorModeContext = createContext({
     //
   },
 });
-
-export default ColorModeContext;

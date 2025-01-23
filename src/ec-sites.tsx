@@ -8,7 +8,7 @@ import { SiRakuten } from "react-icons/si";
 
 interface ECSiteType {
   baseUrl: string;
-  encode?: string;
+  encode?: "SJIS";
   icon: React.ReactNode;
   id: number;
   name: string;

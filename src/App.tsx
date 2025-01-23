@@ -5,7 +5,7 @@ import Layout from "./components/Layout";
 import { Results } from "./components/Results";
 import { SearchField } from "./components/SearchField";
 
-function App() {
+export default function App() {
   const [searchQuery, setSearchQuery] = useState("");
 
   return (
@@ -29,5 +29,3 @@ function App() {
     </Layout>
   );
 }
-
-export default App;

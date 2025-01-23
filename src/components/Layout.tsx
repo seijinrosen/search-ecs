@@ -3,11 +3,11 @@ import { ThemeProvider } from "@mui/material/styles";
 import { useMemo, useState } from "react";
 import { useLocalStorage } from "react-use";
 
-import ColorModeContext from "../contexts/ColorModeContext";
+import { ColorModeContext } from "../contexts/ColorModeContext";
 import { Footer } from "./Footer";
 import { Header } from "./Header";
 
-function Layout({ children }: React.PropsWithChildren) {
+export default function Layout({ children }: React.PropsWithChildren) {
   const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
 
   const [paletteMode, savePaletteMode, removePaletteMode] = useLocalStorage<
@@ -89,5 +89,3 @@ function normalizePaletteMode({
 
   return prefersDarkMode ? "dark" : "light";
 }
-
-export default Layout;

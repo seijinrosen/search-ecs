@@ -12,11 +12,11 @@ import { ecSites } from "../ec-sites";
 import { sjisEncode } from "../util";
 import { ResultItem } from "./ResultItem";
 
-export const Results = memo(function Results({
-  searchQuery,
-}: {
+interface Props {
   readonly searchQuery: string;
-}) {
+}
+
+export const Results = memo(function Results({ searchQuery }: Props) {
   const [showUrl, saveShowUrl] = useLocalStorage("showUrl", true);
 
   return (
