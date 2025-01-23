@@ -1,4 +1,4 @@
-import Encoding from "encoding-japanese";
+import * as Encoding from "encoding-japanese";
 
 export function randomChoice<T>(array: readonly T[]) {
   const randomElement = array[Math.floor(Math.random() * array.length)];

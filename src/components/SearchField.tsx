@@ -7,8 +7,9 @@ import {
   Tooltip,
   useMediaQuery,
 } from "@mui/material";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { memo, useCallback, useEffect, useRef, useState } from "react";
 import { useHotkeys } from "react-hotkeys-hook";
+
 import { randomChoice } from "../util";
 
 const placeholderCandidates = [
@@ -28,7 +29,10 @@ interface Props {
   readonly setSearchQuery: React.Dispatch<React.SetStateAction<string>>;
 }
 
-function SearchField({ searchQuery, setSearchQuery }: Props) {
+export const SearchField = memo(function SearchField({
+  searchQuery,
+  setSearchQuery,
+}: Props) {
   const over600px = useMediaQuery("(min-width:600px)");
   const inputRef = useRef<HTMLInputElement>(null);
   const [mounted, setMounted] = useState(false);
@@ -51,14 +55,19 @@ function SearchField({ searchQuery, setSearchQuery }: Props) {
   }
 
   return (
-    <Box sx={{ display: "flex", alignItems: "flex-end" }}>
+    <Box
+      sx={{
+        alignItems: "flex-end",
+        display: "flex",
+      }}
+    >
       <SearchIcon
         onClick={focusTextField}
         sx={{
           color: "action.active",
+          cursor: "pointer",
           mr: 1,
           my: 0.5,
-          cursor: "pointer",
         }}
       />
 
@@ -107,11 +116,11 @@ function SearchField({ searchQuery, setSearchQuery }: Props) {
             sx={{
               border: "solid 1px",
               borderRadius: "5px",
-              px: 1,
+              cursor: "pointer",
               ml: 1,
               my: 0.5,
+              px: 1,
               userSelect: "none",
-              cursor: "pointer",
             }}
           >
             /
@@ -120,6 +129,4 @@ function SearchField({ searchQuery, setSearchQuery }: Props) {
       )}
     </Box>
   );
-}
-
-export default SearchField;
+});

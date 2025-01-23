@@ -1,10 +1,11 @@
 import { Box, Container } from "@mui/material";
-import { useState } from "react";
-import Layout from "./components/Layout";
-import Results from "./components/Results";
-import SearchField from "./components/SearchField";
+import { useDeferredValue, useState } from "react";
 
-function App() {
+import Layout from "./components/Layout";
+import { Results } from "./components/Results";
+import { SearchField } from "./components/SearchField";
+
+export default function App() {
   const [searchQuery, setSearchQuery] = useState("");
 
   return (
@@ -23,10 +24,8 @@ function App() {
           />
         </Box>
 
-        <Results searchQuery={searchQuery} />
+        <Results searchQuery={useDeferredValue(searchQuery)} />
       </Container>
     </Layout>
   );
 }
-
-export default App;

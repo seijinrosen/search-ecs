@@ -5,12 +5,18 @@ import {
   ListSubheader,
   Typography,
 } from "@mui/material";
+import { memo } from "react";
 import { useLocalStorage } from "react-use";
+
 import { ecSites } from "../ec-sites";
 import { sjisEncode } from "../util";
-import ResultItem from "./ResultItem";
+import { ResultItem } from "./ResultItem";
 
-function Results({ searchQuery }: { readonly searchQuery: string }) {
+interface Props {
+  readonly searchQuery: string;
+}
+
+export const Results = memo(function Results({ searchQuery }: Props) {
   const [showUrl, saveShowUrl] = useLocalStorage("showUrl", true);
 
   return (
@@ -18,7 +24,10 @@ function Results({ searchQuery }: { readonly searchQuery: string }) {
       subheader={
         <ListSubheader
           disableGutters
-          sx={{ justifyContent: "right", display: "flex" }}
+          sx={{
+            display: "flex",
+            justifyContent: "right",
+          }}
         >
           <FormControlLabel
             control={
@@ -41,7 +50,7 @@ function Results({ searchQuery }: { readonly searchQuery: string }) {
         </ListSubheader>
       }
     >
-      {ecSites.map(({ id, name, baseUrl, icon, encode }) => (
+      {ecSites.map(({ baseUrl, encode, icon, id, name }) => (
         <ResultItem
           key={id}
           icon={icon}
@@ -56,6 +65,4 @@ function Results({ searchQuery }: { readonly searchQuery: string }) {
       ))}
     </List>
   );
-}
-
-export default Results;
+});

@@ -1,7 +1,9 @@
 import { AppBar, Toolbar, Typography } from "@mui/material";
-import ColorModeToggle from "./ColorModeToggle";
+import { memo } from "react";
 
-function Header() {
+import { ColorModeToggle } from "./ColorModeToggle";
+
+export const Header = memo(function Header() {
   return (
     <AppBar position="sticky">
       <Toolbar>
@@ -10,11 +12,11 @@ function Header() {
           href="/"
           noWrap
           sx={{
+            color: "inherit",
             flexGrow: 1,
             fontFamily: "monospace",
             fontWeight: 700,
             letterSpacing: ".2rem",
-            color: "inherit",
             textDecoration: "none",
           }}
           variant="h6"
@@ -26,6 +28,4 @@ function Header() {
       </Toolbar>
     </AppBar>
   );
-}
-
-export default Header;
+});

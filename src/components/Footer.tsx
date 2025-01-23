@@ -1,21 +1,23 @@
 import GitHubIcon from "@mui/icons-material/GitHub";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import { Box, Container, Grid2, IconButton } from "@mui/material";
-import Copyright from "./Copyright";
+import { memo } from "react";
 
-function Footer() {
+import { Copyright } from "./Copyright";
+
+export const Footer = memo(function Footer() {
   return (
     <Box
       component="footer"
       sx={{
-        pt: 3,
-        pb: 6,
-        px: 1,
-        mt: "auto",
         backgroundColor: (theme) =>
           theme.palette.mode === "light"
             ? theme.palette.grey[200]
             : theme.palette.grey[800],
+        mt: "auto",
+        pb: 6,
+        pt: 3,
+        px: 1,
       }}
     >
       <Container maxWidth="sm">
@@ -55,6 +57,4 @@ function Footer() {
       </Container>
     </Box>
   );
-}
-
-export default Footer;
+});
