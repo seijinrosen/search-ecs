@@ -6,6 +6,7 @@ import {
   ListItemButton,
   ListItemText,
 } from "@mui/material";
+import { memo } from "react";
 
 interface Props {
   readonly icon: React.ReactNode;
@@ -14,7 +15,12 @@ interface Props {
   readonly url: string;
 }
 
-function ResultItem({ icon, name, showUrl, url }: Props) {
+export const ResultItem = memo(function ResultItem({
+  icon,
+  name,
+  showUrl,
+  url,
+}: Props) {
   return (
     <ListItem disablePadding>
       <ListItemButton
@@ -37,6 +43,4 @@ function ResultItem({ icon, name, showUrl, url }: Props) {
       </ListItemButton>
     </ListItem>
   );
-}
-
-export default ResultItem;
+});

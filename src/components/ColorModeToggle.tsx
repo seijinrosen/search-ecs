@@ -1,11 +1,11 @@
 import SettingsBrightnessIcon from "@mui/icons-material/SettingsBrightness";
 import { IconButton, Snackbar, Tooltip, useTheme } from "@mui/material";
-import { useContext, useState } from "react";
+import { memo, useContext, useState } from "react";
 
 import ColorModeContext from "../contexts/ColorModeContext";
 import MaterialUISwitch from "./MaterialUISwitch";
 
-function ColorModeToggle() {
+export const ColorModeToggle = memo(function ColorModeToggle() {
   const theme = useTheme();
   const colorMode = useContext(ColorModeContext);
   const [open, setOpen] = useState(false);
@@ -51,6 +51,4 @@ function ColorModeToggle() {
       />
     </>
   );
-}
-
-export default ColorModeToggle;
+});

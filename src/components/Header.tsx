@@ -1,8 +1,9 @@
 import { AppBar, Toolbar, Typography } from "@mui/material";
+import { memo } from "react";
 
-import ColorModeToggle from "./ColorModeToggle";
+import { ColorModeToggle } from "./ColorModeToggle";
 
-function Header() {
+export const Header = memo(function Header() {
   return (
     <AppBar position="sticky">
       <Toolbar>
@@ -27,6 +28,4 @@ function Header() {
       </Toolbar>
     </AppBar>
   );
-}
-
-export default Header;
+});

@@ -5,13 +5,18 @@ import {
   ListSubheader,
   Typography,
 } from "@mui/material";
+import { memo } from "react";
 import { useLocalStorage } from "react-use";
 
 import { ecSites } from "../ec-sites";
 import { sjisEncode } from "../util";
-import ResultItem from "./ResultItem";
+import { ResultItem } from "./ResultItem";
 
-function Results({ searchQuery }: { readonly searchQuery: string }) {
+export const Results = memo(function Results({
+  searchQuery,
+}: {
+  readonly searchQuery: string;
+}) {
   const [showUrl, saveShowUrl] = useLocalStorage("showUrl", true);
 
   return (
@@ -60,6 +65,4 @@ function Results({ searchQuery }: { readonly searchQuery: string }) {
       ))}
     </List>
   );
-}
-
-export default Results;
+});

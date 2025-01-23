@@ -1,6 +1,7 @@
 import { Link, Typography } from "@mui/material";
+import { memo } from "react";
 
-function Copyright() {
+export const Copyright = memo(function Copyright() {
   return (
     <Typography
       align="center"
@@ -21,6 +22,4 @@ function Copyright() {
       <span> {new Date().getFullYear()}.</span>
     </Typography>
   );
-}
-
-export default Copyright;
+});

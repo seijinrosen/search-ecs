@@ -1,10 +1,11 @@
 import GitHubIcon from "@mui/icons-material/GitHub";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import { Box, Container, Grid2, IconButton } from "@mui/material";
+import { memo } from "react";
 
-import Copyright from "./Copyright";
+import { Copyright } from "./Copyright";
 
-function Footer() {
+export const Footer = memo(function Footer() {
   return (
     <Box
       component="footer"
@@ -56,6 +57,4 @@ function Footer() {
       </Container>
     </Box>
   );
-}
-
-export default Footer;
+});

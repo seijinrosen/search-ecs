@@ -7,7 +7,7 @@ import {
   Tooltip,
   useMediaQuery,
 } from "@mui/material";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { memo, useCallback, useEffect, useRef, useState } from "react";
 import { useHotkeys } from "react-hotkeys-hook";
 
 import { randomChoice } from "../util";
@@ -29,7 +29,10 @@ interface Props {
   readonly setSearchQuery: React.Dispatch<React.SetStateAction<string>>;
 }
 
-function SearchField({ searchQuery, setSearchQuery }: Props) {
+export const SearchField = memo(function SearchField({
+  searchQuery,
+  setSearchQuery,
+}: Props) {
   const over600px = useMediaQuery("(min-width:600px)");
   const inputRef = useRef<HTMLInputElement>(null);
   const [mounted, setMounted] = useState(false);
@@ -126,6 +129,4 @@ function SearchField({ searchQuery, setSearchQuery }: Props) {
       )}
     </Box>
   );
-}
-
-export default SearchField;
+});

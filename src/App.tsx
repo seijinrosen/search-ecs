@@ -1,9 +1,9 @@
 import { Box, Container } from "@mui/material";
-import { useState } from "react";
+import { useDeferredValue, useState } from "react";
 
 import Layout from "./components/Layout";
-import Results from "./components/Results";
-import SearchField from "./components/SearchField";
+import { Results } from "./components/Results";
+import { SearchField } from "./components/SearchField";
 
 function App() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -24,7 +24,7 @@ function App() {
           />
         </Box>
 
-        <Results searchQuery={searchQuery} />
+        <Results searchQuery={useDeferredValue(searchQuery)} />
       </Container>
     </Layout>
   );
