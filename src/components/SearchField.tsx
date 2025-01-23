@@ -24,8 +24,8 @@ const placeholderCandidates = [
 const randomPlaceholder = randomChoice(placeholderCandidates);
 
 interface Props {
-  searchQuery: string;
-  setSearchQuery: React.Dispatch<React.SetStateAction<string>>;
+  readonly searchQuery: string;
+  readonly setSearchQuery: React.Dispatch<React.SetStateAction<string>>;
 }
 
 function SearchField({ searchQuery, setSearchQuery }: Props) {
@@ -47,7 +47,7 @@ function SearchField({ searchQuery, setSearchQuery }: Props) {
   }, []);
 
   if (!mounted) {
-    return <></>;
+    return;
   }
 
   return (

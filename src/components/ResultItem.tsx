@@ -8,10 +8,10 @@ import {
 } from "@mui/material";
 
 interface Props {
-  name: string;
-  url: string;
-  showUrl: boolean;
-  icon: React.ReactNode;
+  readonly name: string;
+  readonly url: string;
+  readonly showUrl: boolean;
+  readonly icon: React.ReactNode;
 }
 
 function ResultItem({ name, url, showUrl, icon }: Props) {

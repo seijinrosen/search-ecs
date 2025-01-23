@@ -10,7 +10,7 @@ import { ecSites } from "../ec-sites";
 import { sjisEncode } from "../util";
 import ResultItem from "./ResultItem";
 
-function Results({ searchQuery }: { searchQuery: string }) {
+function Results({ searchQuery }: { readonly searchQuery: string }) {
   const [showUrl, saveShowUrl] = useLocalStorage("showUrl", true);
 
   return (
@@ -43,11 +43,12 @@ function Results({ searchQuery }: { searchQuery: string }) {
     >
       {ecSites.map(({ id, name, baseUrl, icon, encode }) => (
         <ResultItem
-          icon={icon}
           key={id}
+          icon={icon}
           name={name}
           showUrl={showUrl ?? true}
           url={baseUrl.replace(
+            // eslint-disable-next-line no-template-curly-in-string
             "${searchQuery}",
             encode === "SJIS" ? sjisEncode(searchQuery) : searchQuery,
           )}

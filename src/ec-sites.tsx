@@ -1,3 +1,5 @@
+/* eslint-disable no-template-curly-in-string */
+
 import GoogleIcon from "@mui/icons-material/Google";
 import { Typography } from "@mui/material";
 import { DiYahooSmall } from "react-icons/di";
