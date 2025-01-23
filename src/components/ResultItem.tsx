@@ -8,13 +8,13 @@ import {
 } from "@mui/material";
 
 interface Props {
-  readonly name: string;
-  readonly url: string;
-  readonly showUrl: boolean;
   readonly icon: React.ReactNode;
+  readonly name: string;
+  readonly showUrl: boolean;
+  readonly url: string;
 }
 
-function ResultItem({ name, url, showUrl, icon }: Props) {
+function ResultItem({ icon, name, showUrl, url }: Props) {
   return (
     <ListItem disablePadding>
       <ListItemButton

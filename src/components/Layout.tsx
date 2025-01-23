@@ -2,39 +2,22 @@ import { Box, createTheme, CssBaseline, useMediaQuery } from "@mui/material";
 import { ThemeProvider } from "@mui/material/styles";
 import { useMemo, useState } from "react";
 import { useLocalStorage } from "react-use";
+
 import ColorModeContext from "../contexts/ColorModeContext";
 import Footer from "./Footer";
 import Header from "./Header";
-
-function normalizePaletteMode({
-  prefersDarkMode,
-  paletteMode,
-}: {
-  prefersDarkMode: boolean;
-  paletteMode?: string;
-}): "light" | "dark" {
-  if (paletteMode === "light") {
-    return "light";
-  }
-
-  if (paletteMode === "dark") {
-    return "dark";
-  }
-
-  return prefersDarkMode ? "dark" : "light";
-}
 
 function Layout({ children }: React.PropsWithChildren) {
   const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
 
   const [paletteMode, savePaletteMode, removePaletteMode] = useLocalStorage<
-    "light" | "dark"
+    "dark" | "light"
   >("paletteMode");
 
   const [mode, setMode] = useState(
     normalizePaletteMode({
-      prefersDarkMode,
       paletteMode,
+      prefersDarkMode,
     }),
   );
 
@@ -47,6 +30,7 @@ function Layout({ children }: React.PropsWithChildren) {
           return nextMode;
         });
       },
+
       resetColorMode: () => {
         setMode(prefersDarkMode ? "dark" : "light");
         removePaletteMode();
@@ -86,6 +70,24 @@ function Layout({ children }: React.PropsWithChildren) {
       </ThemeProvider>
     </ColorModeContext.Provider>
   );
+}
+
+function normalizePaletteMode({
+  paletteMode,
+  prefersDarkMode,
+}: {
+  paletteMode?: string;
+  prefersDarkMode: boolean;
+}): "dark" | "light" {
+  if (paletteMode === "light") {
+    return "light";
+  }
+
+  if (paletteMode === "dark") {
+    return "dark";
+  }
+
+  return prefersDarkMode ? "dark" : "light";
 }
 
 export default Layout;

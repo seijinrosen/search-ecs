@@ -6,6 +6,7 @@ import {
   Typography,
 } from "@mui/material";
 import { useLocalStorage } from "react-use";
+
 import { ecSites } from "../ec-sites";
 import { sjisEncode } from "../util";
 import ResultItem from "./ResultItem";
@@ -18,7 +19,10 @@ function Results({ searchQuery }: { readonly searchQuery: string }) {
       subheader={
         <ListSubheader
           disableGutters
-          sx={{ justifyContent: "right", display: "flex" }}
+          sx={{
+            display: "flex",
+            justifyContent: "right",
+          }}
         >
           <FormControlLabel
             control={
@@ -41,7 +45,7 @@ function Results({ searchQuery }: { readonly searchQuery: string }) {
         </ListSubheader>
       }
     >
-      {ecSites.map(({ id, name, baseUrl, icon, encode }) => (
+      {ecSites.map(({ baseUrl, encode, icon, id, name }) => (
         <ResultItem
           key={id}
           icon={icon}

@@ -1,4 +1,5 @@
 import { AppBar, Toolbar, Typography } from "@mui/material";
+
 import ColorModeToggle from "./ColorModeToggle";
 
 function Header() {
@@ -10,11 +11,11 @@ function Header() {
           href="/"
           noWrap
           sx={{
+            color: "inherit",
             flexGrow: 1,
             fontFamily: "monospace",
             fontWeight: 700,
             letterSpacing: ".2rem",
-            color: "inherit",
             textDecoration: "none",
           }}
           variant="h6"

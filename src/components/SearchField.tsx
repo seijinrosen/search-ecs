@@ -9,6 +9,7 @@ import {
 } from "@mui/material";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useHotkeys } from "react-hotkeys-hook";
+
 import { randomChoice } from "../util";
 
 const placeholderCandidates = [
@@ -51,14 +52,19 @@ function SearchField({ searchQuery, setSearchQuery }: Props) {
   }
 
   return (
-    <Box sx={{ display: "flex", alignItems: "flex-end" }}>
+    <Box
+      sx={{
+        alignItems: "flex-end",
+        display: "flex",
+      }}
+    >
       <SearchIcon
         onClick={focusTextField}
         sx={{
           color: "action.active",
+          cursor: "pointer",
           mr: 1,
           my: 0.5,
-          cursor: "pointer",
         }}
       />
 
@@ -107,11 +113,11 @@ function SearchField({ searchQuery, setSearchQuery }: Props) {
             sx={{
               border: "solid 1px",
               borderRadius: "5px",
-              px: 1,
+              cursor: "pointer",
               ml: 1,
               my: 0.5,
+              px: 1,
               userSelect: "none",
-              cursor: "pointer",
             }}
           >
             /

@@ -8,6 +8,7 @@
     "eslint:recommended",
     "plugin:@typescript-eslint/strict-type-checked",
     "plugin:@typescript-eslint/stylistic-type-checked",
+    "plugin:perfectionist/recommended-natural-legacy",
     "plugin:react-hooks/recommended",
     "plugin:react/recommended",
     "plugin:react/jsx-runtime",
@@ -53,13 +54,13 @@
     "@typescript-eslint/no-import-type-side-effects": "warn",
     "@typescript-eslint/strict-boolean-expressions": "error",
 
-    // import
-    "import/order": [
-      2,
+    // perfectionist
+    "perfectionist/sort-jsx-props": "off",
+    "perfectionist/sort-objects": [
+      "warn",
       {
-        "alphabetize": {
-          "order": "asc"
-        }
+        "partitionByNewLine": true,
+        "type": "natural"
       }
     ],
 

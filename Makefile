@@ -14,6 +14,10 @@ clean:
 dev:
 	pnpm run dev
 
+fix:
+	pnpm run eslint:fix
+	pnpm run prettier:write
+
 install:
 	pnpm install
 
