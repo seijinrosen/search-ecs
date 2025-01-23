@@ -1,6 +1,6 @@
 import Encoding from "encoding-japanese";
 
-export const randomChoice = <T>(array: readonly T[]) => {
+export function randomChoice<T>(array: readonly T[]) {
   const randomElement = array[Math.floor(Math.random() * array.length)];
 
   if (randomElement == null) {
@@ -8,7 +8,8 @@ export const randomChoice = <T>(array: readonly T[]) => {
   }
 
   return randomElement;
-};
+}
 
-export const sjisEncode = (s: string) =>
-  Encoding.urlEncode(Encoding.convert(Encoding.stringToCode(s), "SJIS"));
+export function sjisEncode(s: string) {
+  return Encoding.urlEncode(Encoding.convert(Encoding.stringToCode(s), "SJIS"));
+}

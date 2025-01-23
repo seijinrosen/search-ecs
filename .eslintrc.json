@@ -30,6 +30,7 @@
   "rules": {
     "curly": "warn",
     "eqeqeq": ["error", "smart"],
+    "func-style": ["warn", "declaration"],
 
     "@typescript-eslint/consistent-type-imports": "warn",
     "@typescript-eslint/no-import-type-side-effects": "warn",

@@ -6,10 +6,10 @@ import ColorModeContext from "../contexts/ColorModeContext";
 import Footer from "./Footer";
 import Header from "./Header";
 
-const normalizePaletteMode = (
+function normalizePaletteMode(
   prefersDarkMode: boolean,
   paletteMode?: string,
-): "light" | "dark" => {
+): "light" | "dark" {
   if (paletteMode === "light") {
     return "light";
   }
@@ -19,9 +19,9 @@ const normalizePaletteMode = (
   }
 
   return prefersDarkMode ? "dark" : "light";
-};
+}
 
-const Layout = ({ children }: React.PropsWithChildren) => {
+function Layout({ children }: React.PropsWithChildren) {
   const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
 
   const [paletteMode, savePaletteMode, removePaletteMode] = useLocalStorage<
@@ -80,6 +80,6 @@ const Layout = ({ children }: React.PropsWithChildren) => {
       </ThemeProvider>
     </ColorModeContext.Provider>
   );
-};
+}
 
 export default Layout;

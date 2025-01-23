@@ -10,7 +10,7 @@ import { ecSites } from "../ec-sites";
 import { sjisEncode } from "../util";
 import ResultItem from "./ResultItem";
 
-const Results = ({ searchQuery }: { searchQuery: string }) => {
+function Results({ searchQuery }: { searchQuery: string }) {
   const [showUrl, saveShowUrl] = useLocalStorage("showUrl", true);
 
   return (
@@ -55,6 +55,6 @@ const Results = ({ searchQuery }: { searchQuery: string }) => {
       ))}
     </List>
   );
-};
+}
 
 export default Results;
