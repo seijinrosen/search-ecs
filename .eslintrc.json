@@ -33,6 +33,13 @@
     "func-style": ["warn", "declaration"],
 
     "@typescript-eslint/consistent-type-imports": "warn",
+    "max-params": "off",
+    "@typescript-eslint/max-params": [
+      "warn",
+      {
+        "max": 1
+      }
+    ],
     "@typescript-eslint/no-import-type-side-effects": "warn",
     "@typescript-eslint/strict-boolean-expressions": "error",
 

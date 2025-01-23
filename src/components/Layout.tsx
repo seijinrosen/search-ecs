@@ -6,10 +6,13 @@ import ColorModeContext from "../contexts/ColorModeContext";
 import Footer from "./Footer";
 import Header from "./Header";
 
-function normalizePaletteMode(
-  prefersDarkMode: boolean,
-  paletteMode?: string,
-): "light" | "dark" {
+function normalizePaletteMode({
+  prefersDarkMode,
+  paletteMode,
+}: {
+  prefersDarkMode: boolean;
+  paletteMode?: string;
+}): "light" | "dark" {
   if (paletteMode === "light") {
     return "light";
   }
@@ -29,7 +32,10 @@ function Layout({ children }: React.PropsWithChildren) {
   >("paletteMode");
 
   const [mode, setMode] = useState(
-    normalizePaletteMode(prefersDarkMode, paletteMode),
+    normalizePaletteMode({
+      prefersDarkMode,
+      paletteMode,
+    }),
   );
 
   const colorMode = useMemo(
