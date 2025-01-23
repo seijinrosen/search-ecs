@@ -48,6 +48,7 @@
     "prefer-template": "warn",
 
     // typescript
+    "@typescript-eslint/consistent-type-exports": "warn",
     "@typescript-eslint/consistent-type-imports": "warn",
     "max-params": "off",
     "@typescript-eslint/max-params": [
@@ -57,6 +58,7 @@
       }
     ],
     "@typescript-eslint/no-import-type-side-effects": "warn",
+    "@typescript-eslint/no-unsafe-type-assertion": "warn",
     "@typescript-eslint/strict-boolean-expressions": "error",
 
     // import
