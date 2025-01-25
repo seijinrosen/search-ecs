@@ -10,7 +10,7 @@ import {
 import { memo, useCallback, useEffect, useRef, useState } from "react";
 import { useHotkeys } from "react-hotkeys-hook";
 
-import { randomChoice } from "../util";
+import { randomChoice } from "../utils/randomChoice";
 
 const placeholderCandidates = [
   "ウェットティッシュ",
@@ -72,6 +72,7 @@ export const SearchField = memo(function SearchField({
       />
 
       <TextField
+        // eslint-disable-next-line jsx-a11y/no-autofocus
         autoFocus={over600px}
         fullWidth
         inputRef={inputRef}

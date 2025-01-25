@@ -8,8 +8,8 @@ import {
 import { memo } from "react";
 import { useLocalStorage } from "react-use";
 
-import { ecSites } from "../ec-sites";
-import { sjisEncode } from "../util";
+import { ecSites, SEARCH_QUERY } from "../ec-sites";
+import { sjisEncode } from "../utils/sjisEncode";
 import { ResultItem } from "./ResultItem";
 
 interface Props {
@@ -57,8 +57,7 @@ export const Results = memo(function Results({ searchQuery }: Props) {
           name={name}
           showUrl={showUrl ?? true}
           url={baseUrl.replace(
-            // eslint-disable-next-line no-template-curly-in-string
-            "${searchQuery}",
+            SEARCH_QUERY,
             encode === "SJIS" ? sjisEncode(searchQuery) : searchQuery,
           )}
         />
