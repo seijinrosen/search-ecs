@@ -9,7 +9,7 @@ import { memo } from "react";
 import { useLocalStorage } from "react-use";
 
 import { ecSites } from "../ec-sites";
-import { sjisEncode } from "../util";
+import { sjisEncode } from "../utils/sjisEncode";
 import { ResultItem } from "./ResultItem";
 
 interface Props {

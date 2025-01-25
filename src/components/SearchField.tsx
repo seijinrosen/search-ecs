@@ -10,7 +10,7 @@ import {
 import { memo, useCallback, useEffect, useRef, useState } from "react";
 import { useHotkeys } from "react-hotkeys-hook";
 
-import { randomChoice } from "../util";
+import { randomChoice } from "../utils/randomChoice";
 
 const placeholderCandidates = [
   "ウェットティッシュ",
