@@ -72,6 +72,7 @@ export const SearchField = memo(function SearchField({
       />
 
       <TextField
+        // eslint-disable-next-line jsx-a11y/no-autofocus
         autoFocus={over600px}
         fullWidth
         inputRef={inputRef}
