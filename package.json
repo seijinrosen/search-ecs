@@ -52,7 +52,7 @@
     "knip": "^5.42.1",
     "prettier": "^3.4.2",
     "prettier-plugin-packagejson": "^2.5.6",
-    "typescript": "5.7.2",
+    "typescript": "5.7.3",
     "vite": "6.0.7",
     "vitest": "^3.0.3"
   },
