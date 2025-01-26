@@ -28,3 +28,5 @@ pnpm add --save-dev eslint-config-prettier
 pnpm add --save-dev eslint-plugin-import
 
 pnpm create @knip/config
+
+pnpm dlx storybook@latest init
