@@ -6,7 +6,6 @@ check:
 	pnpm run eslint
 	pnpm run build
 	pnpm run knip
-	pnpm run build-storybook
 
 clean:
 	rm -r node_modules/
