@@ -1,3 +1,4 @@
+autodocs
 iconify
 knip
 njsproj
