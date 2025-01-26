@@ -1,3 +1,5 @@
+autodocs
+chromaui
 iconify
 knip
 njsproj

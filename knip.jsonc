@@ -1,5 +1,10 @@
 {
   "$schema": "https://unpkg.com/knip@5/schema-jsonc.json",
 
-  "ignoreDependencies": ["@vitest/coverage-v8"],
+  "ignoreDependencies": [
+    //
+    "@storybook/blocks",
+    "@vitest/coverage-v8",
+    "chromatic",
+  ],
 }

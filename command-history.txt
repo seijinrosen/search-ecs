@@ -28,3 +28,7 @@ pnpm add --save-dev eslint-config-prettier
 pnpm add --save-dev eslint-plugin-import
 
 pnpm create @knip/config
+
+pnpm dlx storybook@latest init
+pnpm remove -D @storybook/addon-onboarding
+npx chromatic --project-token=<your-project-token>
