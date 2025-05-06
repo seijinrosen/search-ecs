@@ -28,7 +28,7 @@
     "encoding-japanese": "^2.0.0",
     "react": "19.0.0",
     "react-dom": "19.0.0",
-    "react-hotkeys-hook": "4.6.1",
+    "react-hotkeys-hook": "4.6.2",
     "react-icons": "5.4.0",
     "react-use": "17.6.0"
   },
