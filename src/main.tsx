@@ -13,4 +13,4 @@ if (rootElement) {
   );
 }
 
-console.log("2025/01/23 b");
+console.log("Build Date:", __BUILD_DATE__);
