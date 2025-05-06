@@ -62,6 +62,7 @@
     "@typescript-eslint/no-import-type-side-effects": "warn",
     "@typescript-eslint/no-unsafe-type-assertion": "warn",
     "@typescript-eslint/strict-boolean-expressions": "error",
+    "@typescript-eslint/switch-exhaustiveness-check": "error",
 
     // import
     "import/newline-after-import": "warn",
