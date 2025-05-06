@@ -9,7 +9,9 @@ check:
 
 clean:
 	rm -r node_modules/
+	rm -r coverage/
 	rm -r dist/
+	rm -r storybook-static/
 
 dev:
 	pnpm run dev
