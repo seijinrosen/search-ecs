@@ -131,7 +131,7 @@ importers:
         version: 3.8.1
       prettier-plugin-packagejson:
         specifier: ^2.5.6
-        version: 2.5.19(prettier@3.8.1)
+        version: 2.5.22(prettier@3.8.1)
       storybook:
         specifier: ^8.5.1
         version: 8.6.15(prettier@3.8.1)
@@ -1260,10 +1260,6 @@ packages:
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
 
-  '@pkgr/core@0.2.9':
-    resolution: {integrity: sha512-QNqXyfVS2wm9hweSYD2O7F0G06uurj9kZ96TRQE5Y9hU7+tgdZwIkbAKc5Ocy1HxEY2kuDQa6cQ1WRs/O5LFKA==}
-    engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
-
   '@popperjs/core@2.11.8':
     resolution: {integrity: sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==}
 
@@ -2292,8 +2288,8 @@ packages:
     resolution: {integrity: sha512-0je+qPKHEMohvfRTCEo3CrPG6cAzAYgmzKyxRiYSSDkS6eGJdyVJm7WaYA5ECaAD9wLB2T4EEeymA5aFVcYXCA==}
     engines: {node: '>=6'}
 
-  detect-indent@7.0.1:
-    resolution: {integrity: sha512-Mc7QhQ8s+cLrnUfU/Ji94vG/r8M26m8f++vyres4ZoojaRDpZ1eSIh/EpzLNwlWuvzSZ3UbDFspjFvTDXe6e/g==}
+  detect-indent@7.0.2:
+    resolution: {integrity: sha512-y+8xyqdGLL+6sh0tVeHcfP/QDd8gUgbasolJJpY7NgeQGSZ739bDtSiaiDgtoicy+mtYB81dKLxO9xRhCyIB3A==}
     engines: {node: '>=12.20'}
 
   detect-newline@4.0.1:
@@ -2706,8 +2702,8 @@ packages:
   get-tsconfig@4.10.0:
     resolution: {integrity: sha512-kGzZ3LWWQcGIAmg6iWvXn0ei6WDtV26wzHRMwDSzmAbcXrTEXxHy6IehI6/4eT6VRKyMP1eF1VqwrVUmE/LR7A==}
 
-  git-hooks-list@4.1.1:
-    resolution: {integrity: sha512-cmP497iLq54AZnv4YRAEMnEyQ1eIn4tGKbmswqwmFV4GBnAqE8NLtWxxdXa++AalfgL5EBH4IxTPyquEuGY/jA==}
+  git-hooks-list@4.2.1:
+    resolution: {integrity: sha512-WNvqJjOxxs/8ZP9+DWdwWJ7cDsd60NHf39XnD82pDVrKO5q7xfPqpkK6hwEAmBa/ZSEE4IOoR75EzbbIuwGlMw==}
 
   glob-parent@5.1.2:
     resolution: {integrity: sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==}
@@ -3337,8 +3333,8 @@ packages:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
 
-  prettier-plugin-packagejson@2.5.19:
-    resolution: {integrity: sha512-Qsqp4+jsZbKMpEGZB1UP1pxeAT8sCzne2IwnKkr+QhUe665EXUo3BAvTf1kAPCqyMv9kg3ZmO0+7eOni/C6Uag==}
+  prettier-plugin-packagejson@2.5.22:
+    resolution: {integrity: sha512-G6WalmoUssKF8ZXkni0+n4324K+gG143KPysSQNW+FrR0XyNb3BdRxchGC/Q1FE/F702p7/6KU7r4mv0WSWbzA==}
     peerDependencies:
       prettier: '>= 1.16.0'
     peerDependenciesMeta:
@@ -3584,11 +3580,11 @@ packages:
     resolution: {integrity: sha512-4zemZi0HvTnYwLfrpk/CF9LOd9Lt87kAt50GnqhMpyF9U3poDAP2+iukq2bZsO/ufegbYehBkqINbsWxj4l4cw==}
     engines: {node: '>= 18'}
 
-  sort-object-keys@1.1.3:
-    resolution: {integrity: sha512-855pvK+VkU7PaKYPc+Jjnmt4EzejQHyhhF33q31qG8x7maDzkeFhAAThdCYay11CISO+qAMwjOBP+fPZe0IPyg==}
+  sort-object-keys@2.1.0:
+    resolution: {integrity: sha512-SOiEnthkJKPv2L6ec6HMwhUcN0/lppkeYuN1x63PbyPRrgSPIuBJCiYxYyvWRTtjMlOi14vQUCGUJqS6PLVm8g==}
 
-  sort-package-json@3.4.0:
-    resolution: {integrity: sha512-97oFRRMM2/Js4oEA9LJhjyMlde+2ewpZQf53pgue27UkbEXfHJnDzHlUxQ/DWUkzqmp7DFwJp8D+wi/TYeQhpA==}
+  sort-package-json@3.6.0:
+    resolution: {integrity: sha512-fyJsPLhWvY7u2KsKPZn1PixbXp+1m7V8NWqU8CvgFRbMEX41Ffw1kD8n0CfJiGoaSfoAvbrqRRl/DcHO8omQOQ==}
     engines: {node: '>=20'}
     hasBin: true
 
@@ -3722,10 +3718,6 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
 
-  synckit@0.11.11:
-    resolution: {integrity: sha512-MeQTA1r0litLUf0Rp/iisCaL8761lKAZHaimlbGK4j0HysC4PLfqygQj9srcs0m2RdtDYnF8UuYyKpbjHYp7Jw==}
-    engines: {node: ^14.18.0 || >=16.0.0}
-
   test-exclude@7.0.1:
     resolution: {integrity: sha512-pFYqmTw68LXVjeWJMST4+borgQP2AyMNbg1BpZh9LbyhUeNkeaPF9gzfPGUAnSMV3qPYdWUwDIjjCLiSDOl7vg==}
     engines: {node: '>=18'}
@@ -3748,10 +3740,6 @@ packages:
 
   tinyglobby@0.2.13:
     resolution: {integrity: sha512-mEwzpUgrLySlveBwEVDMKk5B57bhLPYovRfPAXD5gA/98Opn0rCDj3GtLwFvCvH5RK9uPCExUROW5NjDwvqkxw==}
-    engines: {node: '>=12.0.0'}
-
-  tinyglobby@0.2.14:
-    resolution: {integrity: sha512-tX5e7OM1HnYr2+a2C/4V0htOcSQcoSTH9KgJnVvNm5zm/cyEWKJ7j7YutsH9CxMdtOkkLFy2AHrMci9IM8IPZQ==}
     engines: {node: '>=12.0.0'}
 
   tinyglobby@0.2.15:
@@ -5091,8 +5079,6 @@ snapshots:
   '@pkgjs/parseargs@0.11.0':
     optional: true
 
-  '@pkgr/core@0.2.9': {}
-
   '@popperjs/core@2.11.8': {}
 
   '@rolldown/pluginutils@1.0.0-beta.27': {}
@@ -6250,7 +6236,7 @@ snapshots:
 
   dequal@2.0.3: {}
 
-  detect-indent@7.0.1: {}
+  detect-indent@7.0.2: {}
 
   detect-newline@4.0.1: {}
 
@@ -6899,7 +6885,7 @@ snapshots:
     dependencies:
       resolve-pkg-maps: 1.0.0
 
-  git-hooks-list@4.1.1: {}
+  git-hooks-list@4.2.1: {}
 
   glob-parent@5.1.2:
     dependencies:
@@ -7543,10 +7529,9 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prettier-plugin-packagejson@2.5.19(prettier@3.8.1):
+  prettier-plugin-packagejson@2.5.22(prettier@3.8.1):
     dependencies:
-      sort-package-json: 3.4.0
-      synckit: 0.11.11
+      sort-package-json: 3.6.0
     optionalDependencies:
       prettier: 3.8.1
 
@@ -7843,17 +7828,17 @@ snapshots:
 
   smol-toml@1.6.0: {}
 
-  sort-object-keys@1.1.3: {}
+  sort-object-keys@2.1.0: {}
 
-  sort-package-json@3.4.0:
+  sort-package-json@3.6.0:
     dependencies:
-      detect-indent: 7.0.1
+      detect-indent: 7.0.2
       detect-newline: 4.0.1
-      git-hooks-list: 4.1.1
+      git-hooks-list: 4.2.1
       is-plain-obj: 4.1.0
       semver: 7.7.3
-      sort-object-keys: 1.1.3
-      tinyglobby: 0.2.14
+      sort-object-keys: 2.1.0
+      tinyglobby: 0.2.15
 
   source-map-js@1.2.1: {}
 
@@ -7999,10 +7984,6 @@ snapshots:
 
   supports-preserve-symlinks-flag@1.0.0: {}
 
-  synckit@0.11.11:
-    dependencies:
-      '@pkgr/core': 0.2.9
-
   test-exclude@7.0.1:
     dependencies:
       '@istanbuljs/schema': 0.1.3
@@ -8022,11 +8003,6 @@ snapshots:
   tinyglobby@0.2.13:
     dependencies:
       fdir: 6.4.4(picomatch@4.0.3)
-      picomatch: 4.0.3
-
-  tinyglobby@0.2.14:
-    dependencies:
-      fdir: 6.5.0(picomatch@4.0.3)
       picomatch: 4.0.3
 
   tinyglobby@0.2.15:
